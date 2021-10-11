@@ -4,7 +4,7 @@ body {
 }
 
 /* Header Styling */
-.content-container{
+.content{
     background-color: #292929;
 }
 
@@ -32,13 +32,13 @@ body {
 }
 
 .header-con{
-    height: 700px;
+    height: 600px;
     background-color: #9F36F1;
     position: relative;
 }
 
 h1{
-    padding-top: 20%;
+    padding-top: 15%;
     margin-left: 80px;
 }
 
@@ -115,4 +115,98 @@ h3{
 .movie-title{
     color: white;
     float: left;
+}
+
+/* Footer */
+.footer{
+    width: 1440px;
+    height: 120px;
+    margin-top: 50px;
+}
+
+.footer h5{
+    font-family: source-sans-pro,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 80px;
+    margin-top: 50px;
+    float: left;
+    color: #444343;
+}
+
+.social-media-link{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.footer a{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.instagram {
+    margin-left: 20px;
+    background-image: url("../Img/Social/Instagram.svg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 25px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.instagram:hover {
+    background-image: url("../Img/Social/Instagram.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.twitter{
+    margin-left: 20px;
+    background-image: url("../Img/Social/Twitter.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.twitter:hover{
+    margin-left: 20px;
+    background-image: url("../Img/Social/Twitter.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.facebook{
+    margin-left: 20px;
+    background-image: url("../Img/Social/Facebook.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.facebook:hover{
+    background-image: url("../Img/Social/Facebook.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mail{
+    background-image: url("../Img/Social/Mail.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mail:hover{
+    background-image: url("../Img/Social/Mail.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
 }
