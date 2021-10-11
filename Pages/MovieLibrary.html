@@ -35,7 +35,7 @@
     </head>
     <body>
 
-        <div class="container-fluid">
+        <div class="container-fluid content-container">
 
             <!-- HEADER -->
             <!-- navigation bar -->
@@ -47,7 +47,7 @@
                             <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Movie Library</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Watch Later</a></li>
                         </ul>
-                        <input class="search-bar" type="search" placeholder="Search...">
+                        <input class="search-bar col-2" type="search" placeholder="Search...">
                     </div>
                 </div>
             </nav> <!--navbar -->
@@ -57,6 +57,9 @@
                 <div class="col-12 header-con">
                     <div class="header-item active">
                         <img class="d-block w-100" src="" alt="">
+                        <h1>Featured Movie</h1>
+                        <h2>Movie Name</h2>
+                        <div class="header-buttons"></div>
                     </div>
                     <div class="header-item">
                         <img class="d-block w-100" src="" alt="">
@@ -66,6 +69,111 @@
                     </div>
                 </div> 
             </div> <!-- header-slider -->
+
+            <!-- CONTENT CONTAINER -->
+            <!-- Filter Buttons (dropdowns) -->
+            <div class="row filter-dropdowns">
+                <select class="col-2 dropdown">
+                    <option value="Select">Genre</option>
+                    <option value="Select">Action</option>
+                    <option value="Select">Comedy</option>
+                    <option value="Select">Drama</option>
+                    <option value="Select">Horror</option>
+                    <option value="Select">Musicals</option>
+                    <option value="Select">Sci-Fi</option>
+                    <option value="Select">Thrillers</option>
+                </select>
+                <select class="col-2 dropdown">
+                    <option value="Select">Year</option>
+                </select>
+                <select class="col-2 dropdown">
+                    <option value="Select">Rating</option>
+                </select>
+            </div>
+
+            <!-- Movie Cards -->
+            <h3>Horror</h3>
+
+            <!-- carousel wrapper -->
+            <div class="carousel slide carousel-multi-item" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- first slide -->
+                    <div class="movie-container row">
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="movie-dropdown button"></div>
+                                        <div class="add button"></div>
+                                        <div class="like button"></div>
+                                    </div>
+                                    <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                                </div>
+                            </div> <!-- card -->
+                        </div>
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="movie-dropdown button"></div>
+                                        <div class="add button"></div>
+                                        <div class="like button"></div>
+                                    </div>
+                                    <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                                </div>
+                            </div> <!-- card -->
+                        </div>
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="movie-dropdown button"></div>
+                                        <div class="add button"></div>
+                                        <div class="like button"></div>
+                                    </div>
+                                    <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                                </div>
+                            </div> <!-- card -->
+                        </div>
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="movie-dropdown button"></div>
+                                        <div class="add button"></div>
+                                        <div class="like button"></div>
+                                    </div>
+                                    <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                                </div>
+                            </div> <!-- card -->
+                        </div>
+                    </div> <!-- first slide -->
+
+                    <h3>Comedy</h3>
+
+                </div> <!-- carousel-inner -->
+            </div> <!-- carousel wrapper -->
+            
             
         </div> <!-- Container -->
 

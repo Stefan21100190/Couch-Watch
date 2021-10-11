@@ -3,6 +3,11 @@ body {
     padding-left: 0;
 }
 
+/* Header Styling */
+.content-container{
+    background-color: #292929;
+}
+
 .navbar{
     background-color: #292929;
     position: relative;
@@ -21,14 +26,93 @@ body {
 
 .search-bar{
     border-radius: 17px;
-    height: 35px;
+    height: 30px;
     border: 2px #9F36F1 solid;
     background-color: transparent;
 }
 
 .header-con{
     height: 700px;
-    background-color: #444343;
+    background-color: #9F36F1;
     position: relative;
 }
 
+h1{
+    padding-top: 20%;
+    margin-left: 80px;
+}
+
+h2{
+    margin-left: 80px;
+}
+
+/* Filter dropdown styling */
+.filter-dropdowns{
+    justify-content: center;
+    display: flex;
+    margin-top: -20px;
+}
+
+.dropdown{
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    background-color: #444343;
+    margin-right: 10px;
+    top: -20px;
+    outline: none;
+    color: white;
+}
+
+h3{
+    margin-left: 80px;
+    color: white;
+    padding-top: 50px;
+}
+
+.movie-container{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* card-styling */
+
+.card{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: -14px;
+    margin-right: -10px;
+}
+
+.like{
+    background-image: url("../Img/Icons/heart.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.movie-dropdown{
+    background-image: url("../Img/Icons/options.svg");
+    background-position: center;
+    background-size: cover; 
+}
+
+.add{
+    background-image: url("../Img/Icons/plus.svg");
+    background-position: center;
+    background-size: cover; 
+}
+
+.card-body, .img_con{
+    background-color: #444343;
+}
+
+.movie-title{
+    color: white;
+    float: left;
+}
