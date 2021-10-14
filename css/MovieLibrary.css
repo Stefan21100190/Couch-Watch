@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding-left: 0;
+}
+
+/* Header Styling */
+.content{
+    background-color: #292929;
+}
+
+.navbar{
+    background-color: #292929;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.collapse{
+    position: relative;
+    padding-left: 240px;
+}
+
+.logo{
+    position: absolute;
+}
+
+.search-bar{
+    border-radius: 17px;
+    height: 30px;
+    border: 2px #9F36F1 solid;
+    background-color: transparent;
+}
+
+.header-con{
+    height: 600px;
+    background-color: #9F36F1;
+    position: relative;
+}
+
+h1{
+    padding-top: 15%;
+    margin-left: 80px;
+}
+
+h2{
+    margin-left: 80px;
+}
+
+/* Filter dropdown styling */
+.filter-dropdowns{
+    justify-content: center;
+    display: flex;
+    margin-top: -20px;
+}
+
+.dropdown{
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    background-color: #444343;
+    margin-right: 10px;
+    top: -20px;
+    outline: none;
+    color: white;
+}
+
+h3{
+    margin-left: 80px;
+    color: white;
+    padding-top: 50px;
+}
+
+.movie-container{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* card-styling */
+
+.card{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: -14px;
+    margin-right: -10px;
+}
+
+.like{
+    background-image: url("../Img/Icons/heart.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.movie-dropdown{
+    background-image: url("../Img/Icons/options.svg");
+    background-position: center;
+    background-size: cover; 
+}
+
+.add{
+    background-image: url("../Img/Icons/plus.svg");
+    background-position: center;
+    background-size: cover; 
+}
+
+.card-body, .img_con{
+    background-color: #444343;
+}
+
+.movie-title{
+    color: white;
+    float: left;
+}
+
+/* Footer */
+.footer{
+    height: 120px;
+    margin-top: 50px;
+}
+
+.footer h5{
+    font-family: source-sans-pro,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 80px;
+    margin-top: 50px;
+    float: left;
+    color: #444343;
+}
+
+.social-media-link{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.footer a{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.instagram {
+    margin-left: 20px;
+    background-image: url("../Img/Social/Instagram.svg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 25px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.instagram:hover {
+    background-image: url("../Img/Social/Instagram.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.twitter{
+    margin-left: 20px;
+    background-image: url("../Img/Social/Twitter.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.twitter:hover{
+    margin-left: 20px;
+    background-image: url("../Img/Social/Twitter.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.facebook{
+    margin-left: 20px;
+    background-image: url("../Img/Social/Facebook.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.facebook:hover{
+    background-image: url("../Img/Social/Facebook.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mail{
+    background-image: url("../Img/Social/Mail.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mail:hover{
+    background-image: url("../Img/Social/Mail.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
