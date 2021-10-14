@@ -1,3 +1,3 @@
-$(document).ready(function() {
-    console.log("lekker boys")
+$("document").ready(function() {
+
 })
