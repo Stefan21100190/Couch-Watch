@@ -13,15 +13,17 @@ body {
     position: relative;
     padding-left: 80px;
     padding-right: 80px;
+    position: relative;
 }
 
 .collapse{
     position: relative;
-    padding-left: 240px;
+    padding-left: 300px;
 }
 
 .logo{
     position: absolute;
+    margin-left: -30px;
 }
 
 .search-bar{
@@ -70,15 +72,24 @@ h3{
     padding-top: 50px;
 }
 
-.movie-container{
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
 /* card-styling */
 
+.carosel{
+    position: relative;
+}
+
+.carosel-inner{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carosel-item {
+    display: inline-block;
+}
+
 .card{
-    margin-left: 1%;
+    margin-left: 0;
     margin-right: 1%;
 }
 
@@ -115,6 +126,26 @@ h3{
 .movie-title{
     color: white;
     float: left;
+}
+
+.movie-container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* left and right buttons */
+
+.chev-left{
+    margin-top: 80px;
+    float: left;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.chev-right{
+    margin-top: 80px;
+    float: right;
 }
 
 /* Footer */
