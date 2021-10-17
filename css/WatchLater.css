@@ -14,13 +14,15 @@ body {
     padding-right: 80px;
 }
 
+
 .collapse{
     position: relative;
-    padding-left: 240px;
+    padding-left: 300px;
 }
 
 .logo{
     position: absolute;
+    margin-left: -30px;
 }
 
 .search-bar{
