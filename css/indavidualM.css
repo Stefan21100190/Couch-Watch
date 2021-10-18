@@ -1,17 +1,21 @@
 /* movie header */
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .con-header-M {
     height: 65vh;
-    background-color: cadetblue;
     position: relative;
+    border-bottom: 1px solid rgb(161, 161, 161);
 }
 
 .movie-header {
     height: 80%;
     width: 80%;
     margin: auto;
-    background-color: coral;
     margin-top: 7%;
+    color: #e3d1f3;
 }
 
 .dir-year {
@@ -24,7 +28,6 @@
 }
 
 .movie-name-M {
-    background-color: darkgreen;
     font-size: 100px;
 }
 
@@ -44,9 +47,9 @@
     position: absolute;
     right: 2%;
     bottom: 0%;
-    background-color: darkmagenta;
     font-size: 17px;
     font-weight: bold;
+    color: #e3d1f3;
 }
 
 
@@ -56,28 +59,96 @@
 /* additional info  */
 
 .con-additional-M {
-    height: 60vh;
-    background-color: darkolivegreen;
+    height: 30vh;
+    background-color: #292929;
 }
 
 .addit-info-M {
     width: 80%;
-    height: 60%;
-    background-color: darkseagreen;
+    height: 100%;
     margin: auto;
+    margin-top: 1%;
 }
 
 .star-rating-M {
     width: 250px;
     height: 50px;
-    background-color: darkslateblue;
 }
 
 .inner-block {
     width: 50px;
     height: 100%;
-    background-color: darkslategray;
     float: left;
+}
+
+.con-wave-M {
+    height: 20vh;
+    background-color: #9F36F1;
+    position: relative;
+}
+
+
+/* for the wave SVG */
+
+.custom-shape-divider-top-1634556212 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1634556212 svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 136px;
+}
+
+.custom-shape-divider-top-1634556212 .shape-fill {
+    fill: #292929;
+}
+
+
+/** For tablet devices **/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1634556212 svg {
+        width: calc(157% + 1.3px);
+        height: 136px;
+    }
+}
+
+
+/** For mobile devices **/
+
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1634556212 svg {
+        width: calc(100% + 1.3px);
+        height: 45px;
+    }
+}
+
+
+/*____for the wave SVG____*/
+
+.synopsis {
+    height: 15vh;
+    background-color: #9F36F1;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.con-syn {
+    height: 150%;
+    width: 80%;
+    margin: auto;
+    margin-top: -5%;
+    position: absolute;
+    border: 1px solid rgba(128, 128, 128, 0.774);
 }
 
 
@@ -120,9 +191,6 @@
     background-color: #9F36F1;
     position: relative;
 }
-
-
-/* footer-styling */
 
 
 /* Footer */

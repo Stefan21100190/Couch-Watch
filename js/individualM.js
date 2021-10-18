@@ -1,7 +1,7 @@
 $("document").ready(function() {
-    console.log("lekker bois");
 
-    var r = 5;
+    // star rating
+    var r = 7;
     var x = r / 2;
     var z = Math.round(5 - x);
     var y = Math.floor(x);
@@ -34,4 +34,14 @@ $("document").ready(function() {
             }
         }
     }
+    //___star rating___
+
+    // Similar movies & Rocommended movies
+
+
+
+    //___Similar movies & Rocommended movies___
+    // filling the information
+
+
 })
