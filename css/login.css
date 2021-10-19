@@ -5,7 +5,7 @@ body {
 
 .block {
     height: 100vh;
-    background-color: #9F36F1;
+    background-color: #292929;
     margin: 0%;
     padding: 0%;
     position: relative;
@@ -160,18 +160,6 @@ input {
 }
 
 .from-btn {
-    /* background-color: #9F36F1;
-    width: 45%;
-    height: 7%;
-    margin: auto;
-    border-radius: 15px;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    padding-bottom: 40px;
-    color: #292929; */
-    /*  */
     margin: auto;
     margin-top: 50px;
     background-color: #9F36F1;
@@ -195,17 +183,16 @@ input {
     background-color: #9F36F1;
     height: 95vh;
     position: absolute;
-    bottom: -75%;
+    bottom: -12%;
     padding: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    /*  */
+    /* margin-left: 0 !important;
+    margin-right: 0 !important; */
     text-align: center;
     transition: all ease-in-out 700ms;
 }
 
 .red-slide {
-    margin-bottom: 35%;
+    margin-bottom: -35%;
 }
 
 .log-in-form-container {
@@ -255,6 +242,9 @@ input {
     color: #9F36F1;
 }
 
+
+/*____LOG IN____*/
+
 @media (min-width: 768px) and (max-width: 1023px) {
     /* SIGN UP */
     .form-container {
@@ -271,17 +261,20 @@ input {
         text-align: center;
     }
     .form-container form {
-        width: 80%;
+        width: 40%;
         height: 50%;
     }
     .from-btn {
-        width: 45%;
-        height: 7%;
-        font-size: 40px;
-        padding-top: 10px;
-        padding-bottom: 55px;
+        margin-top: 100px;
+        width: 22%;
+        height: 40px;
+        font-size: 30px;
     }
     /*___SIGN UP___*/
+    /* Log in */
+    .red {
+        bottom: -5%;
+    }
     .log-in-form-container {
         position: absolute;
         height: 80%;
@@ -296,9 +289,46 @@ input {
         text-align: center;
     }
     .red-slide {
-        margin-bottom: 70%;
+        margin-bottom: -70%;
     }
+    /*____log in____*/
 }
 
-
-/*____LOG IN____*/
+@media (max-width: 767px) {
+    /* SIGN UP */
+    .form-container {
+        height: 80%;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .form-container form {
+        width: 50%;
+        height: 50%;
+    }
+    .from-btn {
+        margin-top: 200px;
+        width: 30%;
+        height: 40px;
+        font-size: 25px;
+    }
+    /*___SIGN UP___*/
+    /* Log in */
+    .red {
+        bottom: -5%;
+    }
+    .red-slide {
+        margin-bottom: -85%;
+    }
+    .log-in-form-container input {
+        width: 100%;
+    }
+    /*____log in____*/
+}

@@ -43,5 +43,4 @@ $("document").ready(function() {
     //___Similar movies & Rocommended movies___
     // filling the information
 
-
 })

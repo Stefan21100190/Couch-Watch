@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Couch-Watch</title>
+
+    <!-- css links -->
     <link rel="stylesheet" href="../css/login.css">
+
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
 
@@ -16,6 +20,9 @@
 
     <!-- API Key (v3 auth) -->
     <!-- 4d51cad1f6d8c339de5671b9d1223770 -->
+
+    <!-- JS files -->
+    <script src="../js/data.js"></script>
 </head>
 
 
@@ -29,9 +36,10 @@
                 </div>
                 <div class=" col-xl-6 col-lg-12 form-container">
                     <h2 class="purple-text">Sign up</h2>
-                    <form>
+                    <form class="col-xl-6">
                         <input type="text" placeholder="First Name" autofocus required style="border-radius: 20px 20px 0px 0px;" autocomplete="off">
                         <input type="text" placeholder="Last Name" required autocomplete="off">
+                        <input type="text" placeholder="username" required autocomplete="off">
                         <input type="email" placeholder="Your Email" required autocomplete="off">
                         <input type="password" placeholder="Select a Password" required autocomplete="off">
                         <input type="password" placeholder="Confirm Password" required style="border-radius:0px 0px 20px 20px;" autocomplete="off">
@@ -56,8 +64,8 @@
                     <h2 class="black-text">Log in</h2>
                     <div class="login-inner">
                         <form>
-                            <input type="text" placeholder="username or email" autofocus required style="border-radius: 20px 20px 0px 0px;" autocomplete="off">
-                            <input type="password" placeholder="Confirm Password" required style="border-radius:0px 0px 20px 20px;" autocomplete="off">
+                            <input type="text" class="username" placeholder="username or email" autofocus required style="border-radius: 20px 20px 0px 0px;" autocomplete="off">
+                            <input class="password" type="password" placeholder="Confirm Password" required style="border-radius:0px 0px 20px 20px;" autocomplete="off">
                         </form>
                     </div>
                     <div class=" log-in-from-btn ">
@@ -68,7 +76,6 @@
         </div>
         <script src="../js/jquery-3.6.0.min.js "></script>
         <script src="../js/login.js "></script>
-        <script src="../js/index.js "></script>
 </body>
 
 </html>
