@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script src="js/home.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -14,26 +20,31 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="cw_gray_bg">
+<body class="cw_dark_bg">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- HEADER -->
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">logo</a>
-            <a class="nav-link active" aria-current="page" href="#">Movie Library</a>
-            <a class="nav-link active" aria-current="page" href="#">Watch Later</a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <img class="logo" src="img/Logo-02.svg" alt="logo" height="150px">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="MovieLibrary.html">Movie
+                            Library</a></li>
+                    <li class="nav-item"><a class="nav-link" href="WatchLater.html">Watch Later</a></li>
+                </ul>
+                <input class="search-bar col-2" type="search" placeholder="Search...">
+            </div>
         </div>
     </nav>
-    <!-- end of nav -->
+    <!--navbar -->
 
+    <!-- https://api.themoviedb.org/3/_________?api_key=4d51cad1f6d8c339de5671b9d1223770-->
     <div class="container">
         <h1 class="text-white display-1 text-center mt-5">Couch Watch</h1>
         <div class="row">
             <div class="col-md-6 text-center">
-                <img src="img/Logo.svg" alt="" style="width: 14em">
+                <img src="img/Logo_1.svg" alt="" style="width: 14em">
             </div>
             <div class="col-md-6">
                 <p class="text-white mt-2">
@@ -50,16 +61,32 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Movie name</h5>
-                        <a href="#" class="btn btn-primary">Play</a>
-                    </div>
-                </div>
-            </div>
+        <div class="custom-shape-divider-top-1634469309">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="movie-container row">
+
+        </div> <!-- first slide -->
+        <div class="col-12 footer">
+            <h5>copyright©couchwatch</h5>
+            <a href="http://instagram.com">
+                <div class="social-media-link instagram"></div>
+            </a>
+            <a href="http://twitter.com">
+                <div class="social-media-link twitter"></div>
+            </a>
+            <a href="http://facebook.com">
+                <div class="social-media-link facebook"></div>
+            </a>
+            <a href="mailto:couch@watch.co.za">
+                <div class="social-media-link mail"></div>
+            </a>
         </div>
     </div>
 </body>
