@@ -44,16 +44,12 @@
     padding-right: 80px;
 }
 
-.collapse{
-    position: relative;
-    padding-left: 240px;
-}
-
 .logo{
-    position: absolute;
+    height: 2em;
 }
 
 .search-bar{
+    padding: 5px;
     border-radius: 17px;
     height: 30px;
     border: 2px #9F36F1 solid;
@@ -161,6 +157,7 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    z-index: -1;
 }
 
 .custom-shape-divider-top-1634469309 svg {

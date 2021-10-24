@@ -1,207 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- MetaData -->
-        <meta name="author" content="Bronwyn Potgieter, Stefan de Wet, Emma de Haas">
-        <meta name="studentNumber" content="200089, 21100190, 21100101">
-        <meta name="subject" content="DV100_T4">
-        <meta name="lecturer" content="Mike Meynard">
-        <meta name="assignment" content="Term 4: Final Project">
-        <meta name="class" content="Group 6">
+    <!-- MetaData -->
+    <meta name="author" content="Bronwyn Potgieter, Stefan de Wet, Emma de Haas">
+    <meta name="studentNumber" content="200089, 21100190, 21100101">
+    <meta name="subject" content="DV100_T4">
+    <meta name="lecturer" content="Mike Meynard">
+    <meta name="assignment" content="Term 4: Final Project">
+    <meta name="class" content="Group 6">
 
-        <!-- Title -->
-        <title>Watch Later</title>
-        
-        <!-- jQuery Library -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Title -->
+    <title>Watch Later</title>
 
-        <!-- JavaScript Link -->
-        <script src="../js/WatchLater.js"></script>
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-        <!-- CSS link -->
-        <link rel="stylesheet" href="../css/WatchLater.css">
+    <!-- JavaScript Link -->
+    <script src="../js/WatchLater.js"></script>
 
-        <!-- BOOTSTRAP LINKS -->
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <!-- JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../css/WatchLater.css">
 
-    </head>
-    <body>
+    <!-- BOOTSTRAP LINKS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
 
-        <div class="container-fluid content">
-            <!-- HEADER -->
-            <!-- navigation bar -->
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-                <div class="container-fluid">
-                    <img class="logo" src="../Img/Logo-02.svg" alt="logo" height="150px">
-                    <div class="collapse navbar-collapse nav-buttons">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0 nav-buttons">
-                            <li class="nav-item"><a class="nav-link" aria-current="page" href="MovieLibrary.html">Movie Library</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="WatchLater.html">Watch Later</a></li>
-                        </ul>
-                        <input class="search-bar col-2" type="search" placeholder="Search...">
+</head>
+
+<body>
+
+    <div class="container-fluid content">
+        <!-- HEADER -->
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <img class="logo" src="../Img/Logo-02.svg" alt="logo" height="150px">
+                <div class="collapse navbar-collapse nav-buttons">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 nav-buttons">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="MovieLibrary.html">Movie
+                                Library</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="WatchLater.html">Watch Later</a></li>
+                    </ul>
+                    <input class="search-bar col-2" type="search" placeholder="Search...">
+                </div>
+            </div>
+        </nav>
+        <!--navbar -->
+
+        <!-- Content-container -->
+        <h1>Your Movie List</h1>
+        <div class="movie-container row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img_con">
+                        <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
                     </div>
-                </div>
-            </nav> <!--navbar -->
+                    <div class="card-body ">
+                        <h5 class="movie-title">Movie Title</h5>
+                        <div>
+                            <div>Hello</div>
+                            <div>Darkness my old friend</div>
+                        </div>
+                        <div class="side-buttons">
+                            <div class="movie-dropdown button"></div>
+                            <div class="add button"></div>
+                            <div class="like button"></div>
+                        </div>
+                        <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                    </div>
+                </div> <!-- card -->
+            </div>
 
-            <!-- Content-container -->
-            <h1>Your Movie List</h1>
-            <div class="movie-container row">
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <div class="card" >
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img_con">
+                        <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="movie-title">Movie Title</h5>
+                        <div class="side-buttons">
+                            <div class="movie-dropdown button"></div>
+                            <div class="add button"></div>
+                            <div class="like button"></div>
                         </div>
-                        <div class="card-body ">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                </div>
+                        <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                    </div>
+                </div> <!-- card -->
+            </div>
 
-                <div class="col-3 col-lg-3 col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img_con">
+                        <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="movie-title">Movie Title</h5>
+                        <div class="side-buttons">
+                            <div class="movie-dropdown button"></div>
+                            <div class="add button"></div>
+                            <div class="like button"></div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                </div>
+                        <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                    </div>
+                </div> <!-- card -->
+            </div>
 
-                <div class="col-3 col-lg-3 col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img_con">
+                        <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="movie-title">Movie Title</h5>
+                        <div class="side-buttons">
+                            <div class="movie-dropdown button"></div>
+                            <div class="add button"></div>
+                            <div class="like button"></div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                </div>
+                        <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                    </div>
+                </div> <!-- card -->
+            </div>
 
-                <div class="col-3 col-lg-3 col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img_con">
+                        <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="movie-title">Movie Title</h5>
+                        <div class="side-buttons">
+                            <div class="movie-dropdown button"></div>
+                            <div class="add button"></div>
+                            <div class="like button"></div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                </div>
+                        <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                    </div>
+                </div> <!-- card -->
+            </div>
 
-                <div class="col-3 col-lg-3 col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img_con">
+                        <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="movie-title">Movie Title</h5>
+                        <div class="side-buttons">
+                            <div class="movie-dropdown button"></div>
+                            <div class="add button"></div>
+                            <div class="like button"></div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                </div>
+                        <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                    </div>
+                </div> <!-- card -->
+            </div>
 
-                <div class="col-3 col-lg-3 col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img_con">
+                        <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="movie-title">Movie Title</h5>
+                        <div class="side-buttons">
+                            <div class="movie-dropdown button"></div>
+                            <div class="add button"></div>
+                            <div class="like button"></div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                    </div>
+                </div> <!-- card -->
+            </div>
+
+            <div class="col-3 col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img_con">
+                        <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="movie-title">Movie Title</h5>
+                        <div class="side-buttons">
+                            <div class="movie-dropdown button"></div>
+                            <div class="add button"></div>
+                            <div class="like button"></div>
                         </div>
-                    </div> <!-- card -->
-                </div>
+                        <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                    </div>
+                </div> <!-- card -->
+            </div>
 
-                <div class="col-3 col-lg-3 col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                </div>
+        </div> <!-- content-container -->
 
-                <div class="col-3 col-lg-3 col-md-4 col-sm-12">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                </div>
+        <div class="col-12 footer">
+            <h5>copyright©couchwatch</h5>
+            <a href="http://instagram.com">
+                <div class="social-media-link instagram"></div>
+            </a>
+            <a href="http://twitter.com">
+                <div class="social-media-link twitter"></div>
+            </a>
+            <a href="http://facebook.com">
+                <div class="social-media-link facebook"></div>
+            </a>
+            <a href="mailto:couch@watch.co.za">
+                <div class="social-media-link mail"></div>
+            </a>
+        </div> <!-- footer -->
 
-            </div> <!-- content-container -->
+    </div> <!-- Container -->
 
-            <div class="col-12 footer">
-                <h5>copyright©couchwatch</h5>
-                <a href="http://instagram.com"><div class="social-media-link instagram"></div></a>
-                <a href="http://twitter.com"><div class="social-media-link twitter"></div></a>
-                <a href="http://facebook.com"><div class="social-media-link facebook"></div></a>
-                <a href="mailto:couch@watch.co.za"><div class="social-media-link mail"></div></a>
-            </div> <!-- footer -->
-
-        </div> <!-- Container -->
-
-    </body>
+</body>
 
 </html>
