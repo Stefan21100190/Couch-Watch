@@ -8,13 +8,26 @@ body {
     height: 65vh;
     position: relative;
     border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 0% !important;
 }
+
+.backdrop {
+    width: auto;
+    height: 100%;
+}
+
+
+/* .img-M {
+    height: 100px;
+    width: 200px;
+    background-color: slateblue;
+} */
 
 .movie-header {
     height: 80%;
     width: 80%;
     margin: auto;
-    margin-top: 7%;
+    /* margin-top: 7%; */
     color: #e3d1f3;
 }
 
@@ -31,17 +44,19 @@ body {
     font-size: 100px;
 }
 
-.btn-play-M {
+
+/* .btn-play-M {
     height: 50px;
     width: 200px;
     background-color: darkgrey;
     margin-top: 15%;
+    margin-bottom: 5%;
     border-radius: 20px;
     display: flex;
     padding: 10px;
     justify-content: space-around;
     text-align: center;
-}
+} */
 
 .duration-M {
     position: absolute;
@@ -59,8 +74,17 @@ body {
 /* additional info  */
 
 .con-additional-M {
-    height: 30vh;
+    height: 33vh;
     background-color: #292929;
+    transition: all ease-in-out 500ms;
+}
+
+.con-additional-M-height {
+    height: 45vh;
+}
+
+.con-additional-M-height-large {
+    height: 60vh;
 }
 
 .addit-info-M {
@@ -85,6 +109,53 @@ body {
     height: 20vh;
     background-color: #9F36F1;
     position: relative;
+}
+
+.cast-M {
+    width: 90%;
+    height: 39px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out 500ms;
+}
+
+.cast-heigt {
+    height: 110px;
+}
+
+.cast-heigt-large {
+    height: 200px;
+}
+
+.cast-M h3,
+.genres-text-M,
+.lang-text-M {
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+.view-more-btn {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 0%;
+    right: -3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #292929;
+}
+
+.view-more-btn p {
+    opacity: 0.5;
+}
+
+.con-ganre-M,
+.con-lang-M {
+    margin-top: 12px;
+    width: 90%;
+    height: 39px;
+    display: flex;
 }
 
 
@@ -166,7 +237,6 @@ body {
     position: relative;
     padding-left: 80px;
     padding-right: 80px;
-    position: relative;
 }
 
 .collapse {
@@ -284,4 +354,54 @@ body {
     background-position: center;
     background-size: cover;
     cursor: pointer;
+}
+
+.test {
+    height: 100px;
+    width: 500px;
+    background-color: rosybrown;
+}
+
+
+/*____FOOTER____ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .duration-M {
+        bottom: 35%;
+    }
+    .con-additional-M,
+    .con-wave-M,
+    .synopsis {
+        display: none;
+    }
+    /* FADE IN OF DIV */
+    .slideIndiv {
+        width: 20%;
+        height: 110%;
+        background-color: azure;
+        position: absolute;
+        bottom: -35%;
+        left: 11%;
+    }
+    .fade-in {
+        opacity: 0;
+        /* change to 0 */
+        transition: all ease-in-out 1000ms;
+    }
+    .fade-in-appear {
+        opacity: 1;
+    }
+    .from-bottom {
+        transform: translateY(70%);
+    }
+    .from-bottom {
+        transition: opacity 250ms ease-in, transform 400ms ease-in;
+        opacity: 0;
+        /* change to 0 */
+    }
+    .from-bottom-appear {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    /*___FADE IN OF DIV___*/
 }

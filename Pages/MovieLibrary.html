@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- MetaData -->
-        <meta name="author" content="Bronwyn Potgieter, Stefan de Wet, Emma de Haas">
-        <meta name="studentNumber" content="200089, 21100190, 21100101">
-        <meta name="subject" content="DV100_T4">
-        <meta name="lecturer" content="Mike Meynard">
-        <meta name="assignment" content="Term 4: Final Project">
-        <meta name="class" content="Group 6">
+    <!-- MetaData -->
+    <meta name="author" content="Bronwyn Potgieter, Stefan de Wet, Emma de Haas">
+    <meta name="studentNumber" content="200089, 21100190, 21100101">
+    <meta name="subject" content="DV100_T4">
+    <meta name="lecturer" content="Mike Meynard">
+    <meta name="assignment" content="Term 4: Final Project">
+    <meta name="class" content="Group 6">
 
-        <!-- Title -->
-        <title>Movie Library</title>
-        
-        <!-- jQuery Library -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Title -->
+    <title>Movie Library</title>
 
-        <!-- JavaScript Link -->
-        <script src="../js/MovieLibrary.js"></script>
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-        <!-- CSS link -->
-        <link rel="stylesheet" href="../css/MovieLibrary.css">
+    <!-- JavaScript Link -->
+    <script src="../js/MovieLibrary.js"></script>
 
-        <!-- BOOTSTRAP LINKS -->
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <!-- JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../css/MovieLibrary.css">
 
-    </head>
-    <body>
+    <!-- BOOTSTRAP LINKS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
-        <div class="container-fluid content">
+</head>
 
-            <!-- HEADER -->
-            <!-- navigation bar -->
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-                <div class="container-fluid">
-                    <img class="logo" src="../Img/Logo-02.svg" alt="logo" height="150px">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0 nav-buttons">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="MovieLibrary.html">Movie Library</a></li>
-                            <li class="nav-item"><a class="nav-link" href="WatchLater.html">Watch Later</a></li>
-                        </ul>
-                        <input class="search-bar col-2" type="search" placeholder="Search...">
-                    </div>
+<body>
+
+    <div class="container-fluid content">
+
+        <!-- HEADER -->
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <img class="logo" src="../Img/Logo-02.svg" alt="logo" height="150px">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 nav-buttons">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="MovieLibrary.html">Movie Library</a></li>
+                        <li class="nav-item"><a class="nav-link" href="WatchLater.html">Watch Later</a></li>
+                    </ul>
+                    <input class="search-bar col-2" type="search" placeholder="Search...">
                 </div>
-            </nav> <!--navbar -->
+            </div>
+        </nav>
+        <!--navbar -->
 
-            <!-- header slider -->
-            <div class="row header-slide" >
-                <div class="col-12 header-con">
-                    <div class="header-item ">
-                        <img class="d-block w-100" src="" alt="">
-                        <h1>Featured Movie</h1>
-                        <h2>Movie Name</h2>
-                    </div>
-                </div> 
-            </div> <!-- header-slider -->
+        <!-- header slider -->
+        <div class="row header-slide">
+            <div class="col-12 header-con">
+                <div class="header-item ">
+                    <img class="d-block w-100" src="" alt="">
+                    <h1>Featured Movie</h1>
+                    <h2>Movie Name</h2>
+                </div>
+            </div>
+        </div>
+        <!-- header-slider -->
 
-            <!-- CONTENT CONTAINER -->
-            <!-- Filter Buttons (dropdowns) -->
-            <div class="row filter-dropdowns">
-                <select class="col-2 dropdown">
+        <!-- CONTENT CONTAINER -->
+        <!-- Filter Buttons (dropdowns) -->
+        <div class="row filter-dropdowns">
+            <select class="col-2 dropdown">
                     <option value="Select">Genre</option>
                     <option value="Select">Action</option>
                     <option value="Select">Comedy</option>
@@ -76,139 +79,146 @@
                     <option value="Select">Sci-Fi</option>
                     <option value="Select">Thrillers</option>
                 </select>
-                <select class="col-2 dropdown">
+            <select class="col-2 dropdown">
                     <option value="Select">Year</option>
                 </select>
-                <select class="col-2 dropdown">
+            <select class="col-2 dropdown">
                     <option value="Select">Rating</option>
                 </select>
+        </div>
+
+        <!-- Movie Cards -->
+        <h3>Action</h3>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner active row w-100 mx-auto">
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
             </div>
 
-            <!-- Movie Cards -->
-            <h3>Action</h3>
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner active row w-100 mx-auto">
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">Movie Title</h5>
-                            <div class="side-buttons">
-                                <div class="movie-dropdown button"></div>
-                                <div class="add button"></div>
-                                <div class="like button"></div>
-                            </div>
-                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
-                        </div>
-                    </div> <!-- card -->
-                  </div>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+        </div>
 
-            <!-- carousel wrapper -->
-            <div class="carosel slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
+        <!-- carousel wrapper -->
+        <div class="carosel slide carosel-multi-item" data-ride="carousel">
+            <div class="carosel-inner">
 
-                    <div class="slider-buttons">
-                        <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
-                        <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
-                    </div>
+                <div class="slider-buttons">
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
+                </div>
 
-                    <!-- first slide -->
-                    <div class="action-movies row">
-                        <!-- <div class="col-lg-3 col-md-4 item">
+                <!-- first slide -->
+                <div class="action-movies row">
+                    <!-- <div class="col-lg-3 col-md-4 item">
+                        <a href="../pages/individualM.html">
                             <div class="card">
                                 <div class="img_con">
                                     <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
@@ -220,206 +230,237 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                    </div> <!-- action-movies -->
+                        </a>
+                    </div> -->
+                </div>
+                <!-- action-movies -->
 
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-            <h3>Comedy</h3>
-            <!-- carousel wrapper -->
-            <div class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="slider-buttons">
-                        <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
-                        <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
-                    </div>
-
-                    <!-- first slide -->
-                    <div class="comedy-movies row">
-                        <!-- <div class="col-lg-3 col-md-4 item">
-                            <div class="card">
-                                <div class="img_con">
-                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="movie-title">Movie Title</h5>
-                                    <div class="side-buttons">
-                                        <div class="like button"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div> <!-- drama-movies -->
-
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-            <h3>Horror</h3>
-            <!-- carousel wrapper -->
-            <div class="carousel slide carousel-multi-item" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="slider-buttons">
-                        <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
-                        <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
-                    </div>
-
-                    <!-- first slide -->
-                    <div class="horror-movies row">
-                        <!-- <div class="col-lg-3 col-md-4 item">
-                            <div class="card">
-                                <div class="img_con">
-                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="movie-title">Movie Title</h5>
-                                    <div class="side-buttons">
-                                        <div class="like button"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div> <!-- horror-movies -->
-
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-
-            <h3>Musical</h3>
-            <!-- carousel wrapper -->
-            <div class="carousel slide carousel-multi-item" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <!-- first slide -->
-                    <div class="slider-buttons">
-                        <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
-                        <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
-                    </div>
-
-                    <!-- first slide -->
-                    <div class="musicals row">
-                        <!-- <div class="col-lg-3 col-md-4 item">
-                            <div class="card">
-                                <div class="img_con">
-                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="movie-title">Movie Title</h5>
-                                    <div class="side-buttons">
-                                        <div class="like button"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div> <!-- musicals -->
-
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-
-            <h3>Sci-Fi</h3>
-            <!-- carousel wrapper -->
-            <div class="carousel slide carousel-multi-item" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="slider-buttons">
-                        <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
-                        <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
-                    </div>
-
-                    <!-- first slide -->
-                    <div class="sci-fi-movies row">
-                        <!-- <div class="col-lg-3 col-md-4 item">
-                            <div class="card">
-                                <div class="img_con">
-                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="movie-title">Movie Title</h5>
-                                    <div class="side-buttons">
-                                        <div class="like button"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div> <!-- sci-fi-movies -->
-
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-
-            <h3>Thriller</h3>
-            <!-- carousel wrapper -->
-            <div class="carousel slide carousel-multi-item" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="slider-buttons">
-                        <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
-                        <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
-                    </div>
-
-                    <!-- first slide -->
-                    <div class="thriller-movies row">
-                        <!-- <div class="col-lg-3 col-md-4 item">
-                            <div class="card">
-                                <div class="img_con">
-                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="movie-title">Movie Title</h5>
-                                    <div class="side-buttons">
-                                        <div class="like button"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div> <!-- thriller-movies -->
-
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-            <h3>Top Rated</h3>
-            <!-- carousel wrapper -->
-            <div class="carousel slide carousel-multi-item" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="slider-buttons">
-                        <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
-                        <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
-                    </div>
-
-                    <!-- first slide -->
-                    <div class="top-rated-movies row">
-                        <!-- <div class="col-lg-3 col-md-4 item">
-                            <div class="card">
-                                <div class="img_con">
-                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="movie-title">Movie Title</h5>
-                                    <div class="side-buttons">
-                                        <div class="like button"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div> <!-- top-rated-movies -->
-
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-            <div class="col-12 footer">
-                <h5>copyright©couchwatch</h5>
-                <a href="http://instagram.com"><div class="social-media-link instagram"></div></a>
-                <a href="http://twitter.com"><div class="social-media-link twitter"></div></a>
-                <a href="http://facebook.com"><div class="social-media-link facebook"></div></a>
-                <a href="mailto:couch@watch.co.za"><div class="social-media-link mail"></div></a>
             </div>
-            
-        </div> <!-- Container -->
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
 
-    </body>
+        <h3>Comedy</h3>
+        <!-- carousel wrapper -->
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="slider-buttons">
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
+                </div>
+
+                <!-- first slide -->
+                <div class="comedy-movies row">
+                    <!-- <div class="col-lg-3 col-md-4 item">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="like button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+                <!-- drama-movies -->
+
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
+
+        <h3>Horror</h3>
+        <!-- carousel wrapper -->
+        <div class="carousel slide carousel-multi-item" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="slider-buttons">
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
+                </div>
+
+                <!-- first slide -->
+                <div class="horror-movies row">
+                    <!-- <div class="col-lg-3 col-md-4 item">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="like button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+                <!-- horror-movies -->
+
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
+
+
+        <h3>Musical</h3>
+        <!-- carousel wrapper -->
+        <div class="carousel slide carousel-multi-item" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- first slide -->
+                <div class="slider-buttons">
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
+                </div>
+
+                <!-- first slide -->
+                <div class="musicals row">
+                    <!-- <div class="col-lg-3 col-md-4 item">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="like button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+                <!-- musicals -->
+
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
+
+
+        <h3>Sci-Fi</h3>
+        <!-- carousel wrapper -->
+        <div class="carousel slide carousel-multi-item" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="slider-buttons">
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
+                </div>
+
+                <!-- first slide -->
+                <div class="sci-fi-movies row">
+                    <!-- <div class="col-lg-3 col-md-4 item">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="like button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+                <!-- sci-fi-movies -->
+
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
+
+
+        <h3>Thriller</h3>
+        <!-- carousel wrapper -->
+        <div class="carousel slide carousel-multi-item" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="slider-buttons">
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
+                </div>
+
+                <!-- first slide -->
+                <div class="thriller-movies row">
+                    <!-- <div class="col-lg-3 col-md-4 item">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="like button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+                <!-- thriller-movies -->
+
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
+
+        <h3>Top Rated</h3>
+        <!-- carousel wrapper -->
+        <div class="carousel slide carousel-multi-item" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="slider-buttons">
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
+                </div>
+
+                <!-- first slide -->
+                <div class="top-rated-movies row">
+                    <!-- <div class="col-lg-3 col-md-4 item">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="like button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+                <!-- top-rated-movies -->
+
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
+
+        <div class="col-12 footer">
+            <h5>copyright©couchwatch</h5>
+            <a href="http://instagram.com">
+                <div class="social-media-link instagram"></div>
+            </a>
+            <a href="http://twitter.com">
+                <div class="social-media-link twitter"></div>
+            </a>
+            <a href="http://facebook.com">
+                <div class="social-media-link facebook"></div>
+            </a>
+            <a href="mailto:couch@watch.co.za">
+                <div class="social-media-link mail"></div>
+            </a>
+        </div>
+
+    </div>
+    <!-- Container -->
+
+</body>
 
 </html>

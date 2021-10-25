@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     const base_url = 'https://api.themoviedb.org/3';
     const api_key = '?api_key=4d51cad1f6d8c339de5671b9d1223770';
     const img_url = 'https://image.tmdb.org/t/p/w300/'
@@ -11,13 +11,13 @@ $(document).ready(function() {
     console.log(url);
 
 
-    $.getJSON(url, function(data){
+
+    $.getJSON(url, function(data) {
         console.log(data);
 
-        for(i = 0 ; i < 20; i++){
+        for (i = 0; i < 20; i++) {
 
-            if(data.results[i].genre_ids[0] === 28){
-
+            if (data.results[i].genre_ids[0] === 28) {
                 $(".action-movies").append(
 
                     `<div class="col-lg-3 col-md-4 item">
@@ -33,15 +33,15 @@ $(document).ready(function() {
                             </div>
                         </div>
                     </div>`
-                );
 
+                );
             };
 
         };
     })
-    
-    
 
-    
+
+
+
 
 })
