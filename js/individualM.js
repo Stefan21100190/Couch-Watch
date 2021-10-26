@@ -9,20 +9,20 @@ $("document").ready(function() {
 
     const recommendations = '/recommendations';
     const credits = '/credits';
-    const img = '/images';
-    const imgURL = 'https://image.tmdb.org/t/p/w300/';
+    const similar = '/similar'
+    const imgBase = 'https://image.tmdb.org/t/p/original';
 
     const getDetails = url + key;
     const getCredits = url + credits + key;
-    const getRecommendations = url + recommendations;
-    const getImages = imgURL + img;
+    const getRecommendations = url + recommendations + key;
+    const getSimilar = url + similar + key;
 
-    $.getJSON(getImages, function(images) {
 
-        // $(".backdrop img").attr("src", )
-    })
 
     $.getJSON(getDetails, function(details) {
+        // move BACKDROP
+        $(".backdrop-img").attr("src", imgBase + details.backdrop_path);
+
         // movie NAMNE
         $(".movie-name-M").text(details.title);
 
@@ -76,6 +76,13 @@ $("document").ready(function() {
             genres += details.genres[j].name + ",";
             $(".genres-text-M").text(genres);
         };
+
+        // SYNOPSIS
+        $(".synopsis-text-M").text(details.overview);
+
+        // LANGUAGE
+        $(".lang-text-M").text(details.original_language);
+
     });
 
     var castSize = "cast-heigt";
@@ -110,9 +117,54 @@ $("document").ready(function() {
         } else {
             $(".view-more-btn p ").text("more");
         }
+    });
+    // SIMILAR
+    $.getJSON(getSimilar, function(similar) {
+        for (i = 0; i < similar.results.length; i++) {
+            $(".similar-movie-container-M").append(`
+            <div class="col-lg-3 col-md-6 col-sm-12 my-2">
+            <a href="../pages/individualM.html?id=${similar.results[i].id}">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="https://image.tmdb.org/t/p/original${similar.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                        </div>  
+                        <div class="card-body">
+                            <h5 class="movie-title w-100">${similar.results[i].title}</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                        </div>
+                    </div> <!-- card -->
+                </a>
+            </div>`)
+        }
     })
 
-
+    $.getJSON(getRecommendations, function(recomm) {
+        for (i = 0; i < recomm.results.length; i++) {
+            console.log(recomm.results[i].original_title);
+            $(".rocomm-movie-container-M").append(`
+            <div class="col-lg-3 col-md-6 col-sm-12 my-2">
+            <a href="../pages/individualM.html?id=${recomm.results[i].id}">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="https://image.tmdb.org/t/p/original${recomm.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                        </div>  
+                        <div class="card-body">
+                            <h5 class="movie-title w-100">${recomm.results[i].title}</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                        </div>
+                    </div> <!-- card -->
+                </a>
+            </div>`);
+        }
+    });
 
     $(window).scroll(function() { // tablet animation fade in 
         var height = $(window).scrollTop();
@@ -124,6 +176,7 @@ $("document").ready(function() {
             $(".from-bottom").removeClass("from-bottom-appear");
         };
     }); //___tablet animation FADE IN___ 
+
 
 
 })
