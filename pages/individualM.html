@@ -24,7 +24,7 @@
     <div class="container-fluid content">
         <!-- HEADER -->
         <!-- navigation bar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
                 <img class="logo" src="../Img/Logo-02.svg" alt="logo" height="150px">
                 <div class="collapse navbar-collapse nav-buttons">
@@ -40,16 +40,19 @@
 
         <div class="row">
             <div class="col-12 con-header-M">
-                <div class="movie-header">
-                    <h1 class="movie-name-M">Movie name</h1>
-                    <div class="dir-year">
-                        <p class="director-M">director-M</p>
-                        <div class="year-M">year-M</div>
-                    </div>
-                    <div class="btn-play-M">
+                <div class="backdrop">
+                    <div class="movie-header">
+                        <h1 class="movie-name-M">Movie name</h1>
+                        <div class="dir-year">
+                            <p class="director-M">director-M</p>
+                            <p class="year-M">year-M</p>
+                        </div>
+                        <!-- <div class="btn-play-M">
                         <img src="" alt="">
                         <h2 class="play-text-M">Play</h2>
+                    </div> -->
                     </div>
+                    <img class="backdrop-img" src="" alt="">
                 </div>
                 <div class="duration-M">
                     <p class="duration"> 0:02:12</p>
@@ -57,7 +60,7 @@
             </div>
         </div>
         <!-- additional info  -->
-        <div class="row">
+        <div class="row ">
             <div class="col-12 con-additional-M">
                 <div class="addit-info-M">
                     <h2 class="light-text">additional inforamtion:</h2>
@@ -72,15 +75,29 @@
                     </div>
                     <!--___STAR RATING___-->
                     <div class="credits-M light-text">
-                        <h4>Cast: <span class="cast-M"></span> </h4>
-                        <h4>Ganre: <span class="ganret-M"></span> </h4>
-                        <h4>Languge: <span class="languge-M"></span> </h4>
+                        <div class="cast-M">
+                            <h4>Cast: </h4>
+                            <div class="inner-cast_M">
+                                <h3 class="cast-text-M"></h3>
+                            </div>
+                            <div class="view-more-btn">
+                                <p>more</p>
+                            </div>
+                        </div>
+                        <div class="con-ganre-M">
+                            <h4>Genres:</h4>
+                            <h3 class="genres-text-M"></h3>
+                        </div>
+                        <div class="con-lang-M">
+                            <h4>Languge:</h4>
+                            <h3 class=" lang-text-M"></h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- wave SVG -->
-        <div class="row">
+        <div class="row ">
             <div class="col-12 con-wave-M">
                 <div class="wave-M ">
                     <div class="custom-shape-divider-top-1634556212">
@@ -94,22 +111,30 @@
         <!--___wave SVG___-->
 
         <!-- synopsis -->
-        <div class="row con-synopsis">
+        <div class="row ">
             <div class="col-12 synopsis">
                 <div class="con-syn">
-                    <p class="black-text synopsis-text-M"> </p>
+                    <p class=" synopsis-text-M"> </p>
                 </div>
             </div>
         </div>
         <!--__synopsis___-->
 
         <!-- similar movies -->
-        <div class="row">
-            <div class="col-12">
-
-            </div>
+        <div class="similar-movie-container-M row">
+            <h2 class="light-text"> Similar movies </h2>
+            <!-- where movie cards are being added -->
         </div>
         <!--___similar movies___-->
+
+        <!--__synopsis___-->
+
+        <!-- Recommended movies -->
+        <div class="rocomm-movie-container-M row">
+            <h2 class="light-text"> Recommended movies </h2>
+            <!-- where movie cards are being added -->
+        </div>
+        <!--Recommended movies___-->
 
         <div class="col-12 footer">
             <h5>copyright©couchwatch</h5>
