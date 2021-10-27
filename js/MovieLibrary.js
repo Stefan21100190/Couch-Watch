@@ -16,26 +16,22 @@ $(document).ready(function() {
 
         for(i = 0 ; i < 20; i++){
 
-            if(data.results[i].genre_ids[0] === 28){
+            $(".action-movies").append(
 
-                $(".action-movies").append(
-
-                    `<div class="col-lg-3 col-md-4 item">
-                        <div class="card">
-                            <div class="img_con">
-                                <img src="${img_url+data.results[i].poster_path}" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="movie-title">${data.results[i].title}</h5>
-                                <div class="side-buttons">
-                                    <div class="like button"></div>
-                                </div>
+                `<div class="col-lg-3 col-md-4 col-sm-12 my-2 item">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="${img_url+data.results[i].poster_path}" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">${data.results[i].title}</h5>
+                            <div class="side-buttons">
+                                <div class="like button"></div>
                             </div>
                         </div>
-                    </div>`
-                );
-
-            };
+                    </div>
+                </div>`
+            );
 
         };
     })
