@@ -73,7 +73,7 @@ $("document").ready(function() {
         // GENRES 
         var genres = "";
         for (j = 0; j < details.genres.length; j++) {
-            genres += details.genres[j].name + ",";
+            genres += details.genres[j].name + ", ";
             $(".genres-text-M").text(genres);
         };
 
