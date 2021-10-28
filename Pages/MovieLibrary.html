@@ -18,8 +18,7 @@
     <title>Movie Library</title>
 
     <!-- jQuery Library -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- JavaScript Link -->
     <script src="../js/MovieLibrary.js"></script>
@@ -29,17 +28,16 @@
 
     <!-- BOOTSTRAP LINKS -->
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+
     <div class="container-fluid content">
+
         <!-- HEADER -->
         <!-- navigation bar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
@@ -47,8 +45,7 @@
                 <img class="logo" src="../Img/Logo-02.svg" alt="logo" height="150px">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0 nav-buttons">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="MovieLibrary.html">Movie Library</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="MovieLibrary.html">Movie Library</a></li>
                         <li class="nav-item"><a class="nav-link" href="WatchLater.html">Watch Later</a></li>
                     </ul>
                     <input class="search-bar col-2" type="search" placeholder="Search...">
@@ -66,47 +63,182 @@
                     <h2>Movie Name</h2>
                 </div>
             </div>
-        </div> <!-- header-slider -->
+        </div>
+        <!-- header-slider -->
 
         <!-- CONTENT CONTAINER -->
         <!-- Filter Buttons (dropdowns) -->
         <div class="row filter-dropdowns">
             <select class="col-2 dropdown">
-                <option value="Select">Genre</option>
-                <option value="Select">Action</option>
-                <option value="Select">Comedy</option>
-                <option value="Select">Drama</option>
-                <option value="Select">Horror</option>
-                <option value="Select">Musicals</option>
-                <option value="Select">Sci-Fi</option>
-                <option value="Select">Thrillers</option>
-            </select>
+                    <option value="Select">Genre</option>
+                    <option value="Select">Action</option>
+                    <option value="Select">Comedy</option>
+                    <option value="Select">Drama</option>
+                    <option value="Select">Horror</option>
+                    <option value="Select">Musicals</option>
+                    <option value="Select">Sci-Fi</option>
+                    <option value="Select">Thrillers</option>
+                </select>
             <select class="col-2 dropdown">
-                <option value="Select">Year</option>
-            </select>
+                    <option value="Select">Year</option>
+                </select>
             <select class="col-2 dropdown">
-                <option value="Select">Rating</option>
-            </select>
+                    <option value="Select">Rating</option>
+                </select>
         </div>
 
         <!-- Movie Cards -->
         <h3>Action</h3>
 
-        <div id="action-contoller" class="carousel slide w-75" style="margin: auto;" data-bs-ride="false">
-            <div class="carousel-inner action-carousel-holder">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner active row w-100 mx-auto">
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="movie-title">Movie Title</h5>
+                            <div class="side-buttons">
+                                <div class="movie-dropdown button"></div>
+                                <div class="add button"></div>
+                                <div class="like button"></div>
+                            </div>
+                            <!-- <a href="" class="button btn btn-primary">More Info</a> -->
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+
+        <!-- carousel wrapper -->
+        <div class="carosel slide carosel-multi-item" data-ride="carousel">
+            <div class="carosel-inner">
+
+                <div class="slider-buttons">
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
+                </div>
+
+                <!-- first slide -->
+                <div class="action-movies row">
+                    <!-- <div class="col-lg-3 col-md-4 item">
+                        <a href="../pages/individualM.html">
+                            <div class="card">
+                                <div class="img_con">
+                                    <img src="../Img/Logo-01.svg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="movie-title">Movie Title</h5>
+                                    <div class="side-buttons">
+                                        <div class="like button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+                </div>
+                <!-- action-movies -->
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#action-contoller"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#action-contoller"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <!-- carousel-inner -->
         </div>
+        <!-- carousel wrapper -->
 
         <h3>Comedy</h3>
         <!-- carousel wrapper -->
@@ -114,10 +246,8 @@
             <div class="carousel-inner">
 
                 <div class="slider-buttons">
-                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron"
-                            width="50px"></a>
-                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron"
-                            width="50px"></a>
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
                 </div>
 
                 <!-- first slide -->
@@ -135,9 +265,13 @@
                                 </div>
                             </div>
                         </div> -->
-                </div> <!-- drama-movies -->
-            </div> <!-- carousel-inner -->
-        </div> <!-- carousel wrapper -->
+                </div>
+                <!-- drama-movies -->
+
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
 
         <h3>Horror</h3>
         <!-- carousel wrapper -->
@@ -145,10 +279,8 @@
             <div class="carousel-inner">
 
                 <div class="slider-buttons">
-                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron"
-                            width="50px"></a>
-                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron"
-                            width="50px"></a>
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
                 </div>
 
                 <!-- first slide -->
@@ -166,10 +298,13 @@
                                 </div>
                             </div>
                         </div> -->
-                </div> <!-- horror-movies -->
+                </div>
+                <!-- horror-movies -->
 
-            </div> <!-- carousel-inner -->
-        </div> <!-- carousel wrapper -->
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
 
 
         <h3>Musical</h3>
@@ -179,10 +314,8 @@
 
                 <!-- first slide -->
                 <div class="slider-buttons">
-                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron"
-                            width="50px"></a>
-                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron"
-                            width="50px"></a>
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
                 </div>
 
                 <!-- first slide -->
@@ -200,10 +333,13 @@
                                 </div>
                             </div>
                         </div> -->
-                </div> <!-- musicals -->
+                </div>
+                <!-- musicals -->
 
-            </div> <!-- carousel-inner -->
-        </div> <!-- carousel wrapper -->
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
 
 
         <h3>Sci-Fi</h3>
@@ -212,10 +348,8 @@
             <div class="carousel-inner">
 
                 <div class="slider-buttons">
-                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron"
-                            width="50px"></a>
-                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron"
-                            width="50px"></a>
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
                 </div>
 
                 <!-- first slide -->
@@ -233,10 +367,13 @@
                                 </div>
                             </div>
                         </div> -->
-                </div> <!-- sci-fi-movies -->
+                </div>
+                <!-- sci-fi-movies -->
 
-            </div> <!-- carousel-inner -->
-        </div> <!-- carousel wrapper -->
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
 
 
         <h3>Thriller</h3>
@@ -245,10 +382,8 @@
             <div class="carousel-inner">
 
                 <div class="slider-buttons">
-                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron"
-                            width="50px"></a>
-                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron"
-                            width="50px"></a>
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
                 </div>
 
                 <!-- first slide -->
@@ -266,10 +401,13 @@
                                 </div>
                             </div>
                         </div> -->
-                </div> <!-- thriller-movies -->
+                </div>
+                <!-- thriller-movies -->
 
-            </div> <!-- carousel-inner -->
-        </div> <!-- carousel wrapper -->
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
 
         <h3>Top Rated</h3>
         <!-- carousel wrapper -->
@@ -277,10 +415,8 @@
             <div class="carousel-inner">
 
                 <div class="slider-buttons">
-                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron"
-                            width="50px"></a>
-                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron"
-                            width="50px"></a>
+                    <a href=""><img class="chev-left" src="../img/Icons/chevron-compact-left.svg" alt="left-chevron" width="50px"></a>
+                    <a href=""><img class="chev-right" src="../img/Icons/chevron-compact-right.svg" alt="right-chevron" width="50px"></a>
                 </div>
 
                 <!-- first slide -->
@@ -298,10 +434,13 @@
                                 </div>
                             </div>
                         </div> -->
-                </div> <!-- top-rated-movies -->
+                </div>
+                <!-- top-rated-movies -->
 
-            </div> <!-- carousel-inner -->
-        </div> <!-- carousel wrapper -->
+            </div>
+            <!-- carousel-inner -->
+        </div>
+        <!-- carousel wrapper -->
 
         <div class="col-12 footer">
             <h5>copyright©couchwatch</h5>
@@ -319,7 +458,8 @@
             </a>
         </div>
 
-    </div> <!-- Container -->
+    </div>
+    <!-- Container -->
 
 </body>
 

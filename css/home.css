@@ -1,4 +1,5 @@
-.card-body, .img_con {
+.card-body,
+.img_con {
     background-color: #444343;
 }
 
@@ -44,17 +45,22 @@
     padding-right: 80px;
 }
 
+.collapse {
+    position: relative;
+    padding-left: 240px;
+}
+
 .logo {
-    height: 2em;
+    position: absolute;
 }
 
 .search-bar {
-    padding: 5px;
     border-radius: 17px;
     height: 30px;
     border: 2px #9F36F1 solid;
     background-color: transparent;
 }
+
 
 /* Footer */
 
@@ -172,6 +178,7 @@
 .custom-shape-divider-top-1634469309 .shape-fill {
     fill: #9F36F1;
 }
+
 
 /** For mobile devices **/
 
