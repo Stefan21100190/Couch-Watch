@@ -70,12 +70,6 @@ h1{
     background-size: cover; 
 }
 
-.add{
-    background-image: url("../Img/Icons/plus.svg");
-    background-position: center;
-    background-size: cover; 
-}
-
 .card-body, .img_con{
     background-color: #444343;
 }
