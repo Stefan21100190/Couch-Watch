@@ -149,7 +149,24 @@ $(document).ready(function() {
 
             }
 
+            $('.action-carousel-holder').children().first().addClass('active');
         };
+    });
+
+    var myCarousel = document.querySelector('#action-contoller')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: false,
+        wrap: false,
+        pause: true
+    });
+
+    $(document).on('mouseover', '.movie-title', function () {
+        $(this).parent('.card-body').find('.rating-block').show();
+    })
+
+
+    $(document).on('mouseout', '.movie-title', function () {
+        $(this).parent('.card-body').find('.rating-block').hide();
     })
 
     $.getJSON(topRatedUrl, function(result) {
@@ -184,4 +201,5 @@ $(document).ready(function() {
 
 
 
-})
+    return full_html;
+}

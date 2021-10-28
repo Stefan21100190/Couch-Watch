@@ -160,7 +160,6 @@ a.info:hover{
     flex-wrap: wrap;
 }
 
-
 /* left and right buttons */
 
 .chev-left {
@@ -268,4 +267,17 @@ a.info:hover{
     background-position: center;
     background-size: cover;
     cursor: pointer;
+}
+
+.col-breaker {
+    display: inline-block !important;
+    width: 20%;
+}
+
+.card {
+    width: 100% !important;
+}
+
+.rating-block {
+    display: inline-block;
 }
