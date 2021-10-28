@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     const base_url = 'https://api.themoviedb.org/3';
     const api_key = '?api_key=4d51cad1f6d8c339de5671b9d1223770';
     const img_url = 'https://image.tmdb.org/t/p/w300/'
@@ -11,83 +11,82 @@ $(document).ready(function() {
     const genreEl = document.getElementById('genre');
 
     const genres = {
-        "genres": [
-        {
-        "id": 28,
-        "name": "Action"
-        },
-        {
-        "id": 12,
-        "name": "Adventure"
-        },
-        {
-        "id": 16,
-        "name": "Animation"
-        },
-        {
-        "id": 35,
-        "name": "Comedy"
-        },
-        {
-        "id": 80,
-        "name": "Crime"
-        },
-        {
-        "id": 99,
-        "name": "Documentary"
-        },
-        {
-        "id": 18,
-        "name": "Drama"
-        },
-        {
-        "id": 10751,
-        "name": "Family"
-        },
-        {
-        "id": 14,
-        "name": "Fantasy"
-        },
-        {
-        "id": 36,
-        "name": "History"
-        },
-        {
-        "id": 27,
-        "name": "Horror"
-        },
-        {
-        "id": 10402,
-        "name": "Music"
-        },
-        {
-        "id": 9648,
-        "name": "Mystery"
-        },
-        {
-        "id": 10749,
-        "name": "Romance"
-        },
-        {
-        "id": 878,
-        "name": "Science Fiction"
-        },
-        {
-        "id": 10770,
-        "name": "TV Movie"
-        },
-        {
-        "id": 53,
-        "name": "Thriller"
-        },
-        {
-        "id": 10752,
-        "name": "War"
-        },
-        {
-        "id": 37,
-        "name": "Western"
-        }
+        "genres": [{
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 16,
+                "name": "Animation"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 80,
+                "name": "Crime"
+            },
+            {
+                "id": 99,
+                "name": "Documentary"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            },
+            {
+                "id": 10751,
+                "name": "Family"
+            },
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 36,
+                "name": "History"
+            },
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 10402,
+                "name": "Music"
+            },
+            {
+                "id": 9648,
+                "name": "Mystery"
+            },
+            {
+                "id": 10749,
+                "name": "Romance"
+            },
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            },
+            {
+                "id": 10770,
+                "name": "TV Movie"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            },
+            {
+                "id": 10752,
+                "name": "War"
+            },
+            {
+                "id": 37,
+                "name": "Western"
+            }
         ]
     }
 
@@ -102,12 +101,12 @@ $(document).ready(function() {
     }
 
 
-    $.getJSON(url, function(data){
+    $.getJSON(url, function(data) {
         console.log(data);
 
-        for(i = 0 ; i < 20; i++){
+        for (i = 0; i < 20; i++) {
 
-            if(data.results[i].genre_ids[0] === 28){
+            if (data.results[i].genre_ids[0] === 28) {
 
                 $(".action-movies").append(
 
@@ -128,7 +127,7 @@ $(document).ready(function() {
                 );
             }
 
-            if(data.results[i].genre_ids[0] === 12){
+            if (data.results[i].genre_ids[0] === 12) {
 
                 $(".adventure-movies").append(
 
@@ -147,16 +146,16 @@ $(document).ready(function() {
                         </div> <!-- card -->
                     </div>`
                 );
-                
+
             }
 
         };
     })
 
-    $.getJSON(topRatedUrl, function(result){
+    $.getJSON(topRatedUrl, function(result) {
         console.log(result);
 
-        for(i = 0 ; i < 20; i++){
+        for (i = 0; i < 20; i++) {
 
             $(".top-rated").append(
 
@@ -175,14 +174,14 @@ $(document).ready(function() {
                     </div> <!-- card -->
                 </div>`
             );
-            
+
         }
 
-        
+
 
     })
-    
 
-    
+
+
 
 })
