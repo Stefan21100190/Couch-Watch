@@ -6,9 +6,100 @@ $(document).ready(function() {
     const popular_url = '/movie/popular';
     const genre_url = '/genre/movie/list';
     const url = base_url + popular_url + api_key;
+    const topRatedUrl = base_url + '/movie/top_rated' + api_key;
 
-    console.log(base_url + genre_url + api_key);
-    console.log(url);
+    const genreEl = document.getElementById('genre');
+
+    const genres = {
+        "genres": [
+        {
+        "id": 28,
+        "name": "Action"
+        },
+        {
+        "id": 12,
+        "name": "Adventure"
+        },
+        {
+        "id": 16,
+        "name": "Animation"
+        },
+        {
+        "id": 35,
+        "name": "Comedy"
+        },
+        {
+        "id": 80,
+        "name": "Crime"
+        },
+        {
+        "id": 99,
+        "name": "Documentary"
+        },
+        {
+        "id": 18,
+        "name": "Drama"
+        },
+        {
+        "id": 10751,
+        "name": "Family"
+        },
+        {
+        "id": 14,
+        "name": "Fantasy"
+        },
+        {
+        "id": 36,
+        "name": "History"
+        },
+        {
+        "id": 27,
+        "name": "Horror"
+        },
+        {
+        "id": 10402,
+        "name": "Music"
+        },
+        {
+        "id": 9648,
+        "name": "Mystery"
+        },
+        {
+        "id": 10749,
+        "name": "Romance"
+        },
+        {
+        "id": 878,
+        "name": "Science Fiction"
+        },
+        {
+        "id": 10770,
+        "name": "TV Movie"
+        },
+        {
+        "id": 53,
+        "name": "Thriller"
+        },
+        {
+        "id": 10752,
+        "name": "War"
+        },
+        {
+        "id": 37,
+        "name": "Western"
+        }
+        ]
+    }
+
+    setGenre()
+
+    function setGenre() {
+        genreEl.innerHTML = ``;
+        genres.forEach(genre => {
+            const t = document.createElement('option');
+            t.classList.add('tag')
+        })
+    }
 
 
     $.getJSON(url, function(data){
@@ -16,26 +107,80 @@ $(document).ready(function() {
 
         for(i = 0 ; i < 20; i++){
 
-            $(".action-movies").append(
+            if(data.results[i].genre_ids[0] === 28){
 
-                `<div class="col-lg-3 col-md-4 col-sm-12 my-2 item">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="${img_url+data.results[i].poster_path}" class="img-fluid" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="movie-title">${data.results[i].title}</h5>
-                            <div class="side-buttons">
-                                <div class="like button"></div>
+                $(".action-movies").append(
+
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title w-100">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>`
-            );
+                        </div> <!-- card -->
+                    </div>`
+                );
+            }
+
+            if(data.results[i].genre_ids[0] === 12){
+
+                $(".adventure-movies").append(
+
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                </div>
+                            </div>
+                        </div> <!-- card -->
+                    </div>`
+                );
+                
+            }
 
         };
     })
-    
+
+    $.getJSON(topRatedUrl, function(result){
+        console.log(result);
+
+        for(i = 0 ; i < 20; i++){
+
+            $(".top-rated").append(
+
+                `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                    <div class="card">
+                        <div class="img_con">
+                            <img src="${img_url+result.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                        </div>  
+                        <div class="card-body">
+                            <h5 class="movie-title w-100">${result.results[i].title}</h5>
+                            <div class="buttons">
+                                <div class="like button"></div>
+                                <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                            </div>
+                        </div>
+                    </div> <!-- card -->
+                </div>`
+            );
+            
+        }
+
+        
+
+    })
     
 
     
