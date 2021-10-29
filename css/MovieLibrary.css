@@ -103,17 +103,13 @@ h3 {
     
 }
 
-.star-rating-M {
-    width: 250px;
-    height: 50px;
-}
-
 .rating{
     padding: 5px;
     float: right;
     background-color: #9F36F1;
     color: #292929;
-    margin-top: 10px;
+    margin-top: 8px;
+    border-radius: 3%;
 }
 
 .button {
