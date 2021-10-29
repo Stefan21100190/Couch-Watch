@@ -110,6 +110,8 @@ h3 {
 
 .rating{
     float: right;
+    background-color: #9F36F1;
+    padding: 3px;
     color: #292929;
     margin-top: 10px;
 }
