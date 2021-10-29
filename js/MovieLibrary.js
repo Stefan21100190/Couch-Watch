@@ -26,7 +26,7 @@ $(document).ready(function() {
                                 <h5 class="movie-title w-100">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -47,7 +47,7 @@ $(document).ready(function() {
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -68,7 +68,7 @@ $(document).ready(function() {
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -89,7 +89,7 @@ $(document).ready(function() {
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -110,7 +110,7 @@ $(document).ready(function() {
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -131,7 +131,7 @@ $(document).ready(function() {
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html?id=${data.results.id}" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -152,7 +152,7 @@ $(document).ready(function() {
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html?id=${data.results.id}" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                 </div>
                             </div>
                         </div> <!-- card -->
