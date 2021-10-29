@@ -24,12 +24,10 @@ $(document).ready(function() {
                             </div>  
                             <div class="card-body">
                                 <h5 class="movie-title w-100">${data.results[i].title}</h5>
-                                <div class="star-rating-M">
-                                    <div class="innerstar-block-M"></div>
-                                </div>
                                 <div class="buttons">
                                     <div class="like button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -185,40 +183,6 @@ $(document).ready(function() {
             } //end of append horror movies
             // $('.action-carousel-holder').children().first().addClass('active');
 
-            //star rating
-            var r = Math.round(details.vote_average);
-            var x = r / 2;
-            var z = Math.round(5 - x);
-            var y = Math.floor(x);
-
-            if (x > 0) {
-                for (i = 0; i < y; i++) {
-                    $(".innerstar-block-M").append(` <div class="inner-block">
-                <img src="../img/stars/fullStar.svg" alt="">
-            </div>`);
-                }
-            };
-            if (x - y > 0) {
-                $(".innerstar-block-M").append(` <div class="inner-block">
-                <img src="../img/stars/halfStar.svg" alt="">
-                </div>`);
-            };
-
-            if (z > 0) {
-                if (r % 2 == 0) {
-                    for (p = 0; p < z; p++) {
-                        $(".innerstar-block-M").append(` <div class="inner-block">
-                <img src="../img/stars/EmptyStar.svg" alt="">  
-                </div>`);
-                    }
-                } else {
-                    for (p = 0; p < z - 1; p++) {
-                        $(".innerstar-block-M").append(` <div class="inner-block">
-                <img src="../img/stars/EmptyStar.svg" alt="">  
-                </div>`);
-                    }
-                }
-            }; //star rating
         };
     });
 
@@ -239,37 +203,6 @@ $(document).ready(function() {
     // $(document).on('mouseout', '.movie-title', function() {
     //     $(this).parent('.card-body').find('.rating-block').hide();
     // })
-
-    //append top rated movies
-    $.getJSON(topRatedUrl, function(result) {
-        console.log(result);
-
-        for (i = 0; i < 20; i++) {
-            $(".top-rated").append(
-                `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="${img_url+result.results[i].poster_path}" class="card-img-top img-fluid" alt="">
-                        </div>  
-                        <div class="card-body">
-                            <h5 class="movie-title w-100">${result.results[i].title}</h5>
-                            <div class="buttons">
-                                <div class="like button"></div>
-                                <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
-                            </div>
-                        </div>
-                    </div> <!-- card -->
-                </div>`
-            );
-        }
-
-
-
-    })
-
-
-
-
     return full_html;
 })
 

@@ -108,10 +108,9 @@ h3 {
     height: 50px;
 }
 
-.inner-block {
-    width: 50px;
-    height: 100%;
-    float: left;
+.rating{
+    float: right;
+    background-color: #292929;
 }
 
 .button {
