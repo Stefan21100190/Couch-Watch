@@ -110,7 +110,8 @@ h3 {
 
 .rating{
     float: right;
-    background-color: #292929;
+    color: #292929;
+    margin-top: 10px;
 }
 
 .button {
