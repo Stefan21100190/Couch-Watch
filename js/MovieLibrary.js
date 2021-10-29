@@ -90,16 +90,6 @@ $(document).ready(function() {
         ]
     }
 
-    setGenre()
-
-    function setGenre() {
-        genreEl.innerHTML = ``;
-        genres.forEach(genre => {
-            const t = document.createElement('option');
-            t.classList.add('tag')
-        })
-    }
-
 
     $.getJSON(url, function(data) {
         console.log(data);
