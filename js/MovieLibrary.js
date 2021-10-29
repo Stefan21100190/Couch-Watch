@@ -24,6 +24,9 @@ $(document).ready(function() {
                             </div>  
                             <div class="card-body">
                                 <h5 class="movie-title w-100">${data.results[i].title}</h5>
+                                <div class="star-rating-M">
+                                    <div class="innerstar-block-M"></div>
+                                </div>
                                 <div class="buttons">
                                     <div class="like button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
@@ -180,9 +183,42 @@ $(document).ready(function() {
                     </div>`
                 );
             } //end of append horror movies
-
-
             // $('.action-carousel-holder').children().first().addClass('active');
+
+            //star rating
+            var r = Math.round(details.vote_average);
+            var x = r / 2;
+            var z = Math.round(5 - x);
+            var y = Math.floor(x);
+
+            if (x > 0) {
+                for (i = 0; i < y; i++) {
+                    $(".innerstar-block-M").append(` <div class="inner-block">
+                <img src="../img/stars/fullStar.svg" alt="">
+            </div>`);
+                }
+            };
+            if (x - y > 0) {
+                $(".innerstar-block-M").append(` <div class="inner-block">
+                <img src="../img/stars/halfStar.svg" alt="">
+                </div>`);
+            };
+
+            if (z > 0) {
+                if (r % 2 == 0) {
+                    for (p = 0; p < z; p++) {
+                        $(".innerstar-block-M").append(` <div class="inner-block">
+                <img src="../img/stars/EmptyStar.svg" alt="">  
+                </div>`);
+                    }
+                } else {
+                    for (p = 0; p < z - 1; p++) {
+                        $(".innerstar-block-M").append(` <div class="inner-block">
+                <img src="../img/stars/EmptyStar.svg" alt="">  
+                </div>`);
+                    }
+                }
+            }; //star rating
         };
     });
 
