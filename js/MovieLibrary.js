@@ -173,7 +173,7 @@ $(document).ready(function() {
             $(".genre-filter").click(function(){
 
                 var genreType = $(this).data("type");
-                console.log(type);
+                console.log(genreType);
             })
 
         };
