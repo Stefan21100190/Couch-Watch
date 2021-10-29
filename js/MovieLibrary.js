@@ -196,7 +196,6 @@ $(document).ready(function() {
     // $(document).on('mouseout', '.movie-title', function() {
     //     $(this).parent('.card-body').find('.rating-block').hide();
     // })
-    return full_html;
 })
 
 $(function() {
