@@ -8,108 +8,15 @@ $(document).ready(function() {
     const url = base_url + popular_url + api_key;
     const topRatedUrl = base_url + '/movie/top_rated' + api_key;
 
-    const genreEl = document.getElementById('genre');
-
-    const genres = {
-        "genres": [{
-                "id": 28,
-                "name": "Action"
-            },
-            {
-                "id": 12,
-                "name": "Adventure"
-            },
-            {
-                "id": 16,
-                "name": "Animation"
-            },
-            {
-                "id": 35,
-                "name": "Comedy"
-            },
-            {
-                "id": 80,
-                "name": "Crime"
-            },
-            {
-                "id": 99,
-                "name": "Documentary"
-            },
-            {
-                "id": 18,
-                "name": "Drama"
-            },
-            {
-                "id": 10751,
-                "name": "Family"
-            },
-            {
-                "id": 14,
-                "name": "Fantasy"
-            },
-            {
-                "id": 36,
-                "name": "History"
-            },
-            {
-                "id": 27,
-                "name": "Horror"
-            },
-            {
-                "id": 10402,
-                "name": "Music"
-            },
-            {
-                "id": 9648,
-                "name": "Mystery"
-            },
-            {
-                "id": 10749,
-                "name": "Romance"
-            },
-            {
-                "id": 878,
-                "name": "Science Fiction"
-            },
-            {
-                "id": 10770,
-                "name": "TV Movie"
-            },
-            {
-                "id": 53,
-                "name": "Thriller"
-            },
-            {
-                "id": 10752,
-                "name": "War"
-            },
-            {
-                "id": 37,
-                "name": "Western"
-            }
-        ]
-    }
-
-    setGenre()
-
-    function setGenre() {
-        genreEl.innerHTML = ``;
-        genres.forEach(genre => {
-            const t = document.createElement('option');
-            t.classList.add('tag')
-        })
-    }
-
 
     $.getJSON(url, function(data) {
         console.log(data);
 
+        //append action movies
         for (i = 0; i < 20; i++) {
 
-            if (data.results[i].genre_ids[0] === 28) {
-
+            if (data.results[i].genre_ids.includes(28)) {
                 $(".action-movies").append(
-
                     `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
                         <div class="card">
                             <div class="img_con">
@@ -119,18 +26,19 @@ $(document).ready(function() {
                                 <h5 class="movie-title w-100">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
                     </div>`
                 );
-            }
+            } //end of append action movies
 
-            if (data.results[i].genre_ids[0] === 12) {
 
+            // append adventure movies
+            if (data.results[i].genre_ids.includes(12)) {
                 $(".adventure-movies").append(
-
                     `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
                         <div class="card">
                             <div class="img_con">
@@ -140,68 +48,152 @@ $(document).ready(function() {
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
                     </div>`
                 );
+            } //end of append adventure movies
 
-            }
 
-            $('.action-carousel-holder').children().first().addClass('active');
+            // append animation movies
+            if (data.results[i].genre_ids.includes(16)) {
+                $(".animation-movies").append(
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
+                                </div>
+                            </div>
+                        </div> <!-- card -->
+                    </div>`
+                );
+            } //end of append animation movies
+
+
+            // append comedy movies
+            if (data.results[i].genre_ids.includes(35)) {
+                $(".comedy-movies").append(
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
+                                </div>
+                            </div>
+                        </div> <!-- card -->
+                    </div>`
+                );
+            } //end of append comedy movies
+
+
+            // append crime movies
+            if (data.results[i].genre_ids.includes(80)) {
+                $(".crime-movies").append(
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
+                                </div>
+                            </div>
+                        </div> <!-- card -->
+                    </div>`
+                );
+            } //end of append crime movies
+
+
+            // append drama movies
+            if (data.results[i].genre_ids.includes(18)) {
+                $(".drama-movies").append(
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
+                                </div>
+                            </div>
+                        </div> <!-- card -->
+                    </div>`
+                );
+            } //end of append drama movies
+
+
+            // append horror movies
+            if (data.results[i].genre_ids.includes(27)) {
+                $(".horror-movies").append(
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
+                                </div>
+                            </div>
+                        </div> <!-- card -->
+                    </div>`
+                );
+            } //end of append horror movies
+            // $('.action-carousel-holder').children().first().addClass('active');
+
+
+            //FILTERS
+            // $(".genre-filter").click(function(){
+
+            // })
+
         };
     });
 
-    var myCarousel = document.querySelector('#action-contoller')
-    var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: false,
-        wrap: false,
-        pause: true
-    });
+    //TRIED MULTI ITEN CAROUSEL
 
-    $(document).on('mouseover', '.movie-title', function() {
-        $(this).parent('.card-body').find('.rating-block').show();
-    })
+    // var myCarousel = document.querySelector('#action-contoller')
+    // var carousel = new bootstrap.Carousel(myCarousel, {
+    //     interval: false,
+    //     wrap: false,
+    //     pause: true
+    // });
 
-
-    $(document).on('mouseout', '.movie-title', function() {
-        $(this).parent('.card-body').find('.rating-block').hide();
-    })
-
-    $.getJSON(topRatedUrl, function(result) {
-        console.log(result);
-
-        for (i = 0; i < 20; i++) {
-
-            $(".top-rated").append(
-
-                `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
-                    <div class="card">
-                        <div class="img_con">
-                            <img src="${img_url+result.results[i].poster_path}" class="card-img-top img-fluid" alt="">
-                        </div>  
-                        <div class="card-body">
-                            <h5 class="movie-title w-100">${result.results[i].title}</h5>
-                            <div class="buttons">
-                                <div class="like button"></div>
-                                <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
-                            </div>
-                        </div>
-                    </div> <!-- card -->
-                </div>`
-            );
-
-        }
+    // $(document).on('mouseover', '.movie-title', function() {
+    //     $(this).parent('.card-body').find('.rating-block').show();
+    // })
 
 
-
-    })
-
-
-
-
-    return full_html;
+    // $(document).on('mouseout', '.movie-title', function() {
+    //     $(this).parent('.card-body').find('.rating-block').hide();
+    // })
 })
 
 $(function() {

@@ -44,30 +44,57 @@ h1{
     padding-right: 80px;
 }
 
+.item {
+    margin-bottom: 80px;
+    position: relative;
+    display: flex;
+}
+
 .card{
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 50px;
 }
 
-.button{
-    width: 50px;
-    height: 50px;
-    float: right;
-    margin-top: -14px;
-    margin-right: -10px;
+.button {
+    width: 30px;
+    height: 30px;
+    margin-left: -10px;
+    float: left;
+    margin-right: 10px;
 }
 
-.like{
+.like {
     background-image: url("../Img/Icons/heart.svg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 1px;
+}
+
+.like:hover {
+    background-image: url("../Img/Icons/heart-hover.svg");
     background-position: center;
     background-size: cover;
 }
 
-.movie-dropdown{
-    background-image: url("../Img/Icons/options.svg");
-    background-position: center;
-    background-size: cover; 
+.info {
+    background-color: #292929;
+    color: white;
+    width: 100px;
+    padding: 5px 2px;
+    text-align: center;
+    float: left;
+    border-radius: 3%;
+    margin-top: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.info:hover{   
+    text-decoration: none;
+    color: white;
+    background-color: #9F36F1;
 }
 
 .card-body, .img_con{
