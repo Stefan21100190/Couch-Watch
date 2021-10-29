@@ -109,8 +109,7 @@ h3 {
 }
 
 .rating{
-    width: 25px;
-    height: 25px;
+    padding: 5px;
     float: right;
     background-color: #9F36F1;
     color: #292929;
