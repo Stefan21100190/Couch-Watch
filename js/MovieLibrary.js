@@ -170,11 +170,9 @@ $(document).ready(function() {
 
 
             //FILTERS
-            $(".genre-filter").click(function(){
+            // $(".genre-filter").click(function(){
 
-                var genreType = $(this).data("type");
-                console.log(genreType);
-            })
+            // })
 
         };
     });
