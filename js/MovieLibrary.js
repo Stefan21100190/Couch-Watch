@@ -24,10 +24,12 @@ $(document).ready(function() {
                             </div>  
                             <div class="card-body">
                                 <h5 class="movie-title w-100">${data.results[i].title}</h5>
-                                <div class="buttons">
-                                    <div class="like button"></div>
-                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
-                                    <div class="rating">${data.results[i].vote_average}</div>
+                                <div class="addish">
+                                    <div class="buttons">
+                                        <div class="like-button"></div>
+                                        <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                        <div class="rating">${data.results[i].vote_average}</div>
+                                    </div>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -47,7 +49,7 @@ $(document).ready(function() {
                             <div class="card-body">
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
-                                    <div class="like button"></div>
+                                    <div class="like-button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                     <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
@@ -69,7 +71,7 @@ $(document).ready(function() {
                             <div class="card-body">
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
-                                    <div class="like button"></div>
+                                    <div class="like-button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                     <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
@@ -91,7 +93,7 @@ $(document).ready(function() {
                             <div class="card-body">
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
-                                    <div class="like button"></div>
+                                    <div class="like-button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                     <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
@@ -113,7 +115,7 @@ $(document).ready(function() {
                             <div class="card-body">
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
-                                    <div class="like button"></div>
+                                    <div class="like-button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                     <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
@@ -135,7 +137,7 @@ $(document).ready(function() {
                             <div class="card-body">
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
-                                    <div class="like button"></div>
+                                    <div class="like-button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                     <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
@@ -157,7 +159,7 @@ $(document).ready(function() {
                             <div class="card-body">
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
-                                    <div class="like button"></div>
+                                    <div class="like-button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                     <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
@@ -194,17 +196,20 @@ $(document).ready(function() {
     // $(document).on('mouseout', '.movie-title', function() {
     //     $(this).parent('.card-body').find('.rating-block').hide();
     // })
+
+    console.log("hello")
+    $(".like-button").on("click", function() {
+        window.location.href = "#";
+    })
+
 })
 
-$(function() {
-    // checking session storage. 
+// $(function() {
+//     // checking session storage. 
 
-    var test = sessionStorage.getItem("username");
-    console.log(test);
+//     var test = sessionStorage.getItem("username");
 
-    if (test === null) {
-        window.location.href = "../pages/login.html";
-    } else {
-        console.log("working")
-    }
-})
+//     if (test === null) {
+//         window.location.href = "../pages/login.html";
+//     };
+// })

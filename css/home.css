@@ -3,6 +3,12 @@
     background-color: #444343;
 }
 
+
+/* .card-body {
+    position: relative;
+    height: 100px;
+} */
+
 .movie-title {
     color: white;
     float: left;
@@ -11,6 +17,17 @@
 .row {
     margin-bottom: 177px;
 }
+
+
+/* .side-buttons {
+    height: 50px;
+    width: 170px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-around;
+} */
 
 .button {
     width: 50px;

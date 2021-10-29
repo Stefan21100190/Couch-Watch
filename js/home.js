@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     const url = 'https://api.themoviedb.org/3/trending/movie/week?api_key=4d51cad1f6d8c339de5671b9d1223770';
 
     $.getJSON(url, function(result) {
@@ -6,7 +6,6 @@ $(function() {
         result.results.forEach((element, index, item) => {
             var html = `
             <div class="col-lg-3 col-md-6 col-sm-12 my-2">
-            <a href="../pages/individualM.html?id=${element.id}">
                     <div class="card">
                         <div class="img_con">
                             <img src="https://image.tmdb.org/t/p/original${element.poster_path}" class="card-img-top img-fluid" alt="">
@@ -20,19 +19,16 @@ $(function() {
                             </div>
                         </div>
                     </div> <!-- card -->
-                </a>
             </div>`;
             container.append(html);
         });
-    });
+    }); // getJSON
+
+    $(function() {
+        // checking session storage. 
+        var auth = sessionStorage.getItem("username");
+        if (auth === null) {
+            window.location.href = "../pages/login.html";
+        }
+    })
 });
-
-$(function() {
-    // checking session storage. 
-
-    var auth = sessionStorage.getItem("username");
-
-    if (auth === null) {
-        window.location.href = "../pages/login.html";
-    }
-})

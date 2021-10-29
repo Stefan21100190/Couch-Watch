@@ -100,10 +100,9 @@ h3 {
 .card {
     margin-left: 0;
     margin-right: 1%;
-    
 }
 
-.rating{
+.rating {
     padding: 5px;
     float: right;
     background-color: #9F36F1;
@@ -147,7 +146,7 @@ h3 {
     text-decoration: none;
 }
 
-a.info:hover{   
+a.info:hover {
     text-decoration: none;
     color: white;
     background-color: #9F36F1;

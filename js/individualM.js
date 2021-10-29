@@ -134,6 +134,7 @@ $("document").ready(function() {
                                 <div class="movie-dropdown button"></div>
                                 <div class="add button"></div>
                                 <div class="like button"></div>
+
                             </div>
                         </div>
                     </div> <!-- card -->
