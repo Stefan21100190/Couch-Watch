@@ -160,12 +160,12 @@ $(document).ready(function() {
         pause: true
     });
 
-    $(document).on('mouseover', '.movie-title', function () {
+    $(document).on('mouseover', '.movie-title', function() {
         $(this).parent('.card-body').find('.rating-block').show();
     })
 
 
-    $(document).on('mouseout', '.movie-title', function () {
+    $(document).on('mouseout', '.movie-title', function() {
         $(this).parent('.card-body').find('.rating-block').hide();
     })
 
@@ -202,4 +202,17 @@ $(document).ready(function() {
 
 
     return full_html;
-}
+})
+
+$(function() {
+    // checking session storage. 
+
+    var test = sessionStorage.getItem("username");
+    console.log(test);
+
+    if (test === null) {
+        window.location.href = "../pages/login.html";
+    } else {
+        console.log("working")
+    }
+})

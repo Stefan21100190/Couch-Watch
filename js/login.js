@@ -1,5 +1,7 @@
 $("document").ready(function() {
 
+
+
     // Log in & Sign up toggle 
     $(".knoppie-log-in").hide();
     $(".knoppie-log-in").on("click", function() {
@@ -30,6 +32,7 @@ $("document").ready(function() {
                     if (userInfo[i].account === true) {
                         window.location.href = "../home.html";
                         sessionStorage.setItem("username", username);
+                        sessionStorage.setItem("password", password);
                         break;
                     } else {
                         $(".username").val("your account has been suspended")
