@@ -173,7 +173,7 @@ $(document).ready(function() {
                                 <h5 class="movie-title">${data.results[i].title}</h5>
                                 <div class="buttons">
                                     <div class="like button"></div>
-                                    <a href="/pages/individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
                                 </div>
                             </div>
                         </div> <!-- card -->
