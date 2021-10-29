@@ -49,6 +49,7 @@ $(document).ready(function() {
                                 <div class="buttons">
                                     <div class="like button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -70,6 +71,7 @@ $(document).ready(function() {
                                 <div class="buttons">
                                     <div class="like button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -91,6 +93,7 @@ $(document).ready(function() {
                                 <div class="buttons">
                                     <div class="like button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -112,6 +115,7 @@ $(document).ready(function() {
                                 <div class="buttons">
                                     <div class="like button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -133,33 +137,13 @@ $(document).ready(function() {
                                 <div class="buttons">
                                     <div class="like button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
                     </div>`
                 );
             } //end of append drama movies
-
-
-            // append family movies
-            if (data.results[i].genre_ids.includes(10751)) {
-                $(".family-movies").append(
-                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
-                        <div class="card">
-                            <div class="img_con">
-                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
-                            </div>  
-                            <div class="card-body">
-                                <h5 class="movie-title">${data.results[i].title}</h5>
-                                <div class="buttons">
-                                    <div class="like button"></div>
-                                    <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
-                                </div>
-                            </div>
-                        </div> <!-- card -->
-                    </div>`
-                );
-            } //end of append family movies
 
 
             // append horror movies
@@ -175,6 +159,7 @@ $(document).ready(function() {
                                 <div class="buttons">
                                     <div class="like button"></div>
                                     <a href="individualM.html?id=${data.results[i].id}" class="info"><div>More Info</div></a>
+                                    <div class="rating">${data.results[i].vote_average}</div>
                                 </div>
                             </div>
                         </div> <!-- card -->
@@ -182,6 +167,14 @@ $(document).ready(function() {
                 );
             } //end of append horror movies
             // $('.action-carousel-holder').children().first().addClass('active');
+
+
+            //FILTERS
+            $(".genre-filter").click(function(){
+
+                var genreType = $(this).data("type");
+                console.log(type);
+            })
 
         };
     });

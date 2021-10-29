@@ -71,15 +71,15 @@
             <!-- Filter Buttons (dropdowns) -->
             <div class="row filter-dropdowns">
                 <select class="col-2 dropdown" id="genre">
-                    <option value="Select" class="tag" >Genre</option>
-                    <option value="Select" class="tag">Action</option>
-                    <option value="Select" class="tag">Adventure</option>
-                    <option value="Select" class="tag">Animation</option>
-                    <option value="Select" class="tag">Comedy</option>
-                    <option value="Select" class="tag">Crime</option>
-                    <option value="Select" class="tag">Drama</option>
-                    <option value="Select" class="tag">Family</option>
-                    <option value="Select" class="tag">Horror</option>
+                    <option value="Select" class="genre-filter" data-type="all">All Genres</option>
+                    <option value="Select" class="genre-filter" data-type="action">Action</option>
+                    <option value="Select" class="genre-filter" data-type="adventure">Adventure</option>
+                    <option value="Select" class="genre-filter" data-type="animation">Animation</option>
+                    <option value="Select" class="genre-filter" data-type="comedy">Comedy</option>
+                    <option value="Select" class="genre-filter" data-type="crime">Crime</option>
+                    <option value="Select" class="genre-filter" data-type="drama">Drama</option>
+                    <option value="Select" class="genre-filter" data-type="family">Family</option>
+                    <option value="Select" class="genre-filter" data-type="horror">Horror</option>
                 </select>
                 <select class="col-2 dropdown">
                     <option value="Select">Year</option>
@@ -89,103 +89,104 @@
                 </select>
             </div>
 
+
             <!-- Movie Cards -->
-            <h3>Action</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <div class="action-movies movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- action-movies -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
+
+            <!-- ACTION -->
+            <div class="genre-container action">
+                <h3>Action</h3>
+                <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
+                    <div class="carosel-inner">
+                        <div class="action-movies movie-container row">
+                            <!-- movie card inderted here -->
+                        </div> <!-- action-movies -->
+                    </div> <!-- carousel-inner -->
+                </div> <!-- carousel wrapper -->
+            </div>
+
+            
+            <!-- ADVENTURE -->
+            <div class="genre-container adventure">
+                <h3>Adventure</h3>
+                <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
+                    <div class="carosel-inner">
+                        <!-- first slide -->
+                        <div class="adventure-movies movie-container row">
+                            <!-- movie card inderted here -->
+                        </div> <!-- adventure-movies -->
+                    </div> <!-- carousel-inner -->
+                </div> <!-- carousel wrapper -->
+            </div>
 
 
-            <h3>Adventure</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <!-- first slide -->
-                    <div class="adventure-movies movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- adventure-movies -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
+            <!-- ANIMATION -->
+            <div class="genre-container animaton">
+                <h3>Animation</h3>
+                <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
+                    <div class="carosel-inner">
+                        <!-- first slide -->
+                        <div class="animation-movies movie-container row">
+                            <!-- movie card inderted here -->
+                        </div> <!-- adventure-movies -->
+                    </div> <!-- carousel-inner -->
+                </div> <!-- carousel wrapper -->
+            </div>
 
 
-            <h3>Animation</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <!-- first slide -->
-                    <div class="animation-movies movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- adventure-movies -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
+            <!-- COMEDY -->
+            <div class="genre-container comedy">
+                <h3>Comedy</h3>
+                <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
+                    <div class="carosel-inner">
+                        <!-- first slide -->
+                        <div class="comedy-movies movie-container row">
+                            <!-- movie card inderted here -->
+                        </div> <!-- comedy -->
+                    </div> <!-- carousel-inner -->
+                </div> <!-- carousel wrapper -->
+            </div>
 
 
-            <h3>Comedy</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <!-- first slide -->
-                    <div class="comedy-movies movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- comedy -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
+            <!-- CRIME -->
+            <div class="genre-container crime">
+                <h3>Crime</h3>
+                <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
+                    <div class="carosel-inner">
+                        <!-- first slide -->
+                        <div class="crime-movies movie-container row">
+                            <!-- movie card inderted here -->
+                        </div> <!-- comedy -->
+                    </div> <!-- carousel-inner -->
+                </div> <!-- carousel wrapper -->
+            </div>
 
 
-            <h3>Crime</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <!-- first slide -->
-                    <div class="crime-movies movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- comedy -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
+            <!-- DRAMA -->
+            <div class="genre-container drama">
+                <h3>Drama</h3>
+                <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
+                    <div class="carosel-inner">
+                        <!-- first slide -->
+                        <div class="drama-movies movie-container row">
+                            <!-- movie card inderted here -->
+                        </div> <!-- drama -->
+                    </div> <!-- carousel-inner -->
+                </div> <!-- carousel wrapper -->
+            </div>
 
 
-            <h3>Drama</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <!-- first slide -->
-                    <div class="drama-movies movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- drama -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-
-            <h3>Family</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <!-- first slide -->
-                    <div class="family-movies movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- family -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-
-            <h3>Horror</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <!-- first slide -->
-                    <div class="horror-movies movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- family -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
-
-
-            <h3>Top Rated</h3>
-            <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
-                <div class="carosel-inner">
-                    <!-- first slide -->
-                    <div class="top-rated movie-container row">
-                        <!-- movie card inderted here -->
-                    </div> <!-- top-rated -->
-                </div> <!-- carousel-inner -->
-            </div> <!-- carousel wrapper -->
+            <!-- HORROR -->
+            <div class="genre-container horror">
+                <h3>Horror</h3>
+                <div class="carosel-container slide carosel-multi-item" data-ride="carousel">
+                    <div class="carosel-inner">
+                        <!-- first slide -->
+                        <div class="horror-movies movie-container row">
+                            <!-- movie card inderted here -->
+                        </div> <!-- family -->
+                    </div> <!-- carousel-inner -->
+                </div> <!-- carousel wrapper -->
+            </div>
 
 
             <div class="col-12 footer">
