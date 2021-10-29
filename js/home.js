@@ -30,12 +30,9 @@ $(function() {
 $(function() {
     // checking session storage. 
 
-    var test = sessionStorage.getItem("username");
-    console.log(test);
+    var auth = sessionStorage.getItem("username");
 
-    if (test === null) {
+    if (auth === null) {
         window.location.href = "../pages/login.html";
-    } else {
-        console.log("working")
     }
 })

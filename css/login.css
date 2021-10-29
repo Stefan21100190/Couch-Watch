@@ -5,8 +5,7 @@ body {
 
 .block {
     height: 100vh;
-    /* background-color: #292929; */
-    background-color: springgreen;
+    background-color: #292929;
     margin: 0%;
     padding: 0%;
     position: relative;

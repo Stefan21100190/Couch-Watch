@@ -33,7 +33,7 @@ $("document").ready(function() {
         // RUNTIME
         var runTime = details.runtime;
         const convert = (n) => `0${n / 60 ^ 0}`.slice(-2) + ':' + ('0' + n % 60).slice(-2);
-        $(".duration").text(convert(runTime));
+        $(".duration").text(convert(runTime) + ":00");
 
         // star rating
         var r = Math.round(details.vote_average);
@@ -120,7 +120,7 @@ $("document").ready(function() {
     });
     // SIMILAR
     $.getJSON(getSimilar, function(similar) {
-        for (i = 0; i < similar.results.length; i++) {
+        for (i = 0; i < 4; i++) {
             $(".similar-movie-container-M").append(`
             <div class="col-lg-3 col-md-6 col-sm-12 my-2">
             <a href="../pages/individualM.html?id=${similar.results[i].id}">
@@ -143,7 +143,7 @@ $("document").ready(function() {
     })
 
     $.getJSON(getRecommendations, function(recomm) {
-        for (i = 0; i < recomm.results.length; i++) {
+        for (i = 0; i < 4; i++) {
             console.log(recomm.results[i].original_title);
             $(".rocomm-movie-container-M").append(`
             <div class="col-lg-3 col-md-6 col-sm-12 my-2">
@@ -165,17 +165,6 @@ $("document").ready(function() {
             </div>`);
         }
     });
-
-    $(window).scroll(function() { // tablet animation fade in 
-        var height = $(window).scrollTop();
-        if (height > 20) {
-            $(".fade-in").addClass("fade-in-appear ");
-            $(".from-bottom").addClass("from-bottom-appear");
-        } else if (height = 20) {
-            $(".fade-in").removeClass("fade-in-appear ");
-            $(".from-bottom").removeClass("from-bottom-appear");
-        };
-    }); //___tablet animation FADE IN___ 
 })
 
 $(function() {

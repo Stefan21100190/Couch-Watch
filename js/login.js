@@ -1,7 +1,4 @@
 $("document").ready(function() {
-
-
-
     // Log in & Sign up toggle 
     $(".knoppie-log-in").hide();
     $(".knoppie-log-in").on("click", function() {
