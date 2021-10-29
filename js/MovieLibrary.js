@@ -94,13 +94,16 @@ $(document).ready(function() {
     $.getJSON(url, function(data) {
         console.log(data);
 
+        //append action movies
+
         for (i = 0; i < 20; i++) {
 
             if (data.results[i].genre_ids.includes(28)) {
 
                 $(".action-movies").append(
 
-                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                    `<h3>Action</h3>
+                    <div class="item col-lg-3 col-md-6 col-sm-12 my-2">
                         <div class="card">
                             <div class="img_con">
                                 <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
@@ -117,7 +120,56 @@ $(document).ready(function() {
                 );
             }
 
+
+            // append adventure movies
             if (data.results[i].genre_ids.includes(12)) {
+
+                $(".adventure-movies").append(
+
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                </div>
+                            </div>
+                        </div> <!-- card -->
+                    </div>`
+                );
+
+            }
+
+
+            // append drama movies
+            if (data.results[i].genre_ids.includes(18)) {
+
+                $(".adventure-movies").append(
+
+                    `<div class="item col-lg-3 col-md-6 col-sm-12 my-2">
+                        <div class="card">
+                            <div class="img_con">
+                                <img src="${img_url+data.results[i].poster_path}" class="card-img-top img-fluid" alt="">
+                            </div>  
+                            <div class="card-body">
+                                <h5 class="movie-title">${data.results[i].title}</h5>
+                                <div class="buttons">
+                                    <div class="like button"></div>
+                                    <a href="/pages/individualM.html" class="info"><div>More Info</div></a>
+                                </div>
+                            </div>
+                        </div> <!-- card -->
+                    </div>`
+                );
+
+            }
+
+            // append comedy movies
+            if (data.results[i].genre_ids.includes(35)) {
 
                 $(".adventure-movies").append(
 
@@ -161,6 +213,7 @@ $(document).ready(function() {
     //     $(this).parent('.card-body').find('.rating-block').hide();
     // })
 
+    //append top rated movies
     $.getJSON(topRatedUrl, function(result) {
         console.log(result);
 

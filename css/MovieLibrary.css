@@ -91,7 +91,7 @@ h3 {
 }
 
 .item {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     position: relative;
     display: flex;
 }
@@ -158,20 +158,6 @@ a.info:hover{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-}
-
-/* left and right buttons */
-
-.chev-left {
-    margin-top: 250px;
-    float: left;
-    margin-right: 0px;
-    padding-right: 0px;
-}
-
-.chev-right {
-    margin-top: 250px;
-    float: right;
 }
 
 
