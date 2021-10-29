@@ -106,7 +106,7 @@ $(document).ready(function() {
 
         for (i = 0; i < 20; i++) {
 
-            if (data.results[i].genre_ids[0] === 28) {
+            if (data.results[i].genre_ids.includes(28)) {
 
                 $(".action-movies").append(
 
