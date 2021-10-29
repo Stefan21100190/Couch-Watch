@@ -26,6 +26,7 @@ body {
 a.logo {
     position: absolute;
     margin-left: -30px;
+    cursor: pointer;
 }
 
 .search-bar {
