@@ -127,7 +127,7 @@ $(document).ready(function() {
                 );
             }
 
-            if (data.results[i].genre_ids[0] === 12) {
+            if (data.results[i].genre_ids.includes(12)) {
 
                 $(".adventure-movies").append(
 
@@ -149,25 +149,27 @@ $(document).ready(function() {
 
             }
 
-            $('.action-carousel-holder').children().first().addClass('active');
+            // $('.action-carousel-holder').children().first().addClass('active');
         };
     });
 
-    var myCarousel = document.querySelector('#action-contoller')
-    var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: false,
-        wrap: false,
-        pause: true
-    });
+    //TRIED MULTI ITEN CAROUSEL
 
-    $(document).on('mouseover', '.movie-title', function() {
-        $(this).parent('.card-body').find('.rating-block').show();
-    })
+    // var myCarousel = document.querySelector('#action-contoller')
+    // var carousel = new bootstrap.Carousel(myCarousel, {
+    //     interval: false,
+    //     wrap: false,
+    //     pause: true
+    // });
+
+    // $(document).on('mouseover', '.movie-title', function() {
+    //     $(this).parent('.card-body').find('.rating-block').show();
+    // })
 
 
-    $(document).on('mouseout', '.movie-title', function() {
-        $(this).parent('.card-body').find('.rating-block').hide();
-    })
+    // $(document).on('mouseout', '.movie-title', function() {
+    //     $(this).parent('.card-body').find('.rating-block').hide();
+    // })
 
     $.getJSON(topRatedUrl, function(result) {
         console.log(result);
